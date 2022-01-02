@@ -277,4 +277,319 @@
         <tag>日记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>RaspberryPi初次启动</title>
+    <url>/2021/11/12/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>mac更换鼠标样式依靠mousecape实现，</p>
+<p><a href="https://github.com/alexzielenski/Mousecape">mousecape</a>是Github上的一个项目，作者是<a href="https://github.com/alexzielenski">alexzielenski</a>，</p>
+<p>项目是用于修改Mac系统鼠标样式的，支持动态鼠标样式。</p>
+<h1 id="mousecape使用"><a href="#mousecape使用" class="headerlink" title="mousecape使用"></a>mousecape使用</h1><p>可以去<a href="https://github.com/alexzielenski/Mousecape/releases/tag/1813">Github</a>下载，也可以从<a href="https://ibelife.cowtransfer.com/s/f6e5fd85dfe943">这里下载</a>，下载解压后拖入Applications并安装一下帮助工具就好啦(因为我已经安装了，所以显示的是<em><strong>Uninstall Helper Tool</strong></em>)。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211110-162606.png" alt="help tool截图"></p>
+<h1 id="添加鼠标样式"><a href="#添加鼠标样式" class="headerlink" title="添加鼠标样式"></a>添加鼠标样式</h1><h2 id="指针样式准备"><a href="#指针样式准备" class="headerlink" title="指针样式准备"></a>指针样式准备</h2><p>鼠标样式可以自己制作采用图片的方式来制作，在此之前我们可以制作一些png格式的图片(可以用Photoshop之类的软件)，也可以自己下载一些已经制作好的鼠标指针，我是在<a href="https://zhutix.com/tag/cursors/">致美化</a>下的，下载完解压，选用cur格式的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111028.png" alt="鼠标指针解压截图"></p>
+<h2 id="制作并使用"><a href="#制作并使用" class="headerlink" title="制作并使用"></a>制作并使用</h2><p>依次点击左上角File👉🏻New Cape</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111459.png" alt="新建样式"></p>
+<p>然后会出现一个新的样式Unnamed，右键点击Edit</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111525.png" alt="添加样式2"></p>
+<p>在此页面可以修改名字、作者、文件名、版本号、Retina选项。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111610.png" alt="新建样式2"></p>
+<blockquote>
+<p>这里解释一下Retina是什么，Retina是一种显示标准。不一定所有的Mac都是Retina屏，可以看一下关于本机的系统报告，硬件中显示器一栏由显示器类型，如果显示的是内建视网膜，说明是Retina屏。</p>
+<p>这个时候就勾选Retina，但其实区别不大。</p>
+<p>Mac Retina <a href="https://support.apple.com/zh-cn/HT202471">官方文档</a> </p>
+</blockquote>
+<p>填写好信息以后，右键选择New Cursor，也可以点击左下角『+』号添加</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111643.png" alt="新建样式"></p>
+<p>填写相关信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111704.png" alt="新建样式4"></p>
+<ul>
+<li>cursor参数值的设定：<ol>
+<li>可以把样式文件拖到右下角虚线框里，如果有工夫可以把2x、5x、10x都填充了，提高鼠标放大后的清晰度。</li>
+<li>然后Type可以看一下下文对指针样式的说明，这里的Arrow代表默认箭头。</li>
+<li>Frames代表帧数。</li>
+<li>HotSpot就是实际点击位置，为了确保我们点击不会有偏差，一般会设置在箭头<code>&lt;-</code>的尖尖上或者移动箭头<code>&lt;-&gt;</code>的中心。</li>
+<li>Size就是大小啦。</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111752.png" alt="新建样式"></p>
+<p>在拖完样式以后会看到有个小红点，然后修改HotSpot调整实际点击位置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-113902.png" alt="添加样式5"></p>
+<p>所有样式添加完成以后，右键点击Apply就可以看到鼠标样式已经更改。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-114202.png" alt="应用样式"></p>
+<h2 id="取消鼠标指针修改"><a href="#取消鼠标指针修改" class="headerlink" title="取消鼠标指针修改"></a>取消鼠标指针修改</h2><p>点击右上角Capes👉🏻Remove Cape就可以了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-114211.png" alt="取消样式修改"></p>
+<h1 id="关于指针样式的一些说明"><a href="#关于指针样式的一些说明" class="headerlink" title="关于指针样式的一些说明"></a>关于指针样式的一些说明</h1><h2 id="Mac-OS鼠标指针样式的官方文档"><a href="#Mac-OS鼠标指针样式的官方文档" class="headerlink" title="Mac OS鼠标指针样式的官方文档"></a>Mac OS鼠标指针样式的官方文档</h2><p>官方文档是稍微有一点小bug的，比如：</p>
+<ul>
+<li>错别字 中文版文档：“当您选择图像中的句型(矩形)区域时，该光标会出现。”</li>
+<li>不详尽 比如move系列是有斜对角方向的，官方文档没有写，而且样式也稍微有些不一样；可能还有其他指针样式的遗漏。</li>
+</ul>
+<blockquote>
+<p><a href="https://support.apple.com/zh-cn/guide/mac-help/mh35695/10.13/mac/10.13">中文官方文档</a></p>
+<p><a href="https://support.apple.com/en-au/guide/mac-help/mh35695/mac">英文官方文档</a></p>
+</blockquote>
+<h2 id="mousecape的指针样式命名"><a href="#mousecape的指针样式命名" class="headerlink" title="mousecape的指针样式命名"></a>mousecape的指针样式命名</h2><p>mac系统的指针样式是稍微有一点小bug的，比如：</p>
+<ul>
+<li>有一些样式会失效，比如制作替身、拖拽拷贝</li>
+<li>有一些样式会闪烁，比如点击链接等手形指针</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">mousecape命名</th>
+<th align="center">解释</th>
+<th align="center">展示</th>
+<th align="center">可用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Alias</td>
+<td align="center">制作替身</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/dde1ed13deb66e74f5c0996556c1da05.png" alt="dde1ed13deb66e74f5c0996556c1da05"></td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Arrow</td>
+<td align="center">默认箭头</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/a0d5e859e5f2b01dbbf81dfc38a3a92f.png" alt="a0d5e859e5f2b01dbbf81dfc38a3a92f"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Busy</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Camera</td>
+<td align="center">可能是旧版的Camera</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Camera2</td>
+<td align="center">捕捉窗口或菜单</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/a1d807299b5280d18764e80ef9803960.png" alt="a1d807299b5280d18764e80ef9803960"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Cell系列</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Closed</td>
+<td align="center">并拢的手(详见mac官方文档)</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/5e73b31d882682f057e25349a5049a96.png" alt="5e73b31d882682f057e25349a5049a96"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Copy</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Copy Drag</td>
+<td align="center">拖拽拷贝</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/7dcad94fa0f159c669ab6a7de8fc1a41.png" alt="7dcad94fa0f159c669ab6a7de8fc1a41"></td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Counting系列</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Crosshair</td>
+<td align="center">图片的矩形区域</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/56bf017e5b6d1f6ca6dfc0813ff2de7b.png" alt="56bf017e5b6d1f6ca6dfc0813ff2de7b"></td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Crosshair 2</td>
+<td align="center">截屏选择十字</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/b5c1bfedcd3c6353a3f0ea987a760d43.png" alt="b5c1bfedcd3c6353a3f0ea987a760d43"></td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Ctx系列</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Empty</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Forbidden</td>
+<td align="center">不允许</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/de23c102ecd137236bed379a4b09b691.png" alt="de23c102ecd137236bed379a4b09b691"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Help</td>
+<td align="center">(好像基本见不到了，在抓图可以看到他的身影)</td>
+<td align="center">?</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">IBeam</td>
+<td align="center">插入文本</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/e607c4162a8fb2650e48e674aaade097.png" alt="e607c4162a8fb2650e48e674aaade097"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">IBeam H.</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">IBeamXOR</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Move</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Link</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Open</td>
+<td align="center">摊开的手(详见mac官方文档)</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/fe220c362c555165475f83b085ed0b94.png" alt="fe220c362c555165475f83b085ed0b94"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Pointing</td>
+<td align="center">点击链接</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/ef7e7351ec881269ade953411d7b04e1.png" alt="ef7e7351ec881269ade953411d7b04e1"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Poof</td>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Resize系列</td>
+<td align="center">(应该是与window系列合并成移动系列了)</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Wait</td>
+<td align="center">等待光标</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/b7036c503ca5c75538eb42b1fda8f60b.png" alt="b7036c503ca5c75538eb42b1fda8f60b"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Window系列</td>
+<td align="center">各个方向的移动</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/0eb5b604ca578d6cb8d651e5a5073682.png" alt="0eb5b604ca578d6cb8d651e5a5073682"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td align="center">Zoom In</td>
+<td align="center">放大</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+<tr>
+<td align="center">Zoom Out</td>
+<td align="center">缩小</td>
+<td align="center">null</td>
+<td align="center">×</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>mousecape命名</th>
+<th>解释</th>
+<th align="center">展示</th>
+<th align="center">可用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arrow</td>
+<td>默认箭头</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/a0d5e859e5f2b01dbbf81dfc38a3a92f.png" alt="a0d5e859e5f2b01dbbf81dfc38a3a92f"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Camera2</td>
+<td>捕捉窗口或菜单</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/a1d807299b5280d18764e80ef9803960.png" alt="a1d807299b5280d18764e80ef9803960"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>并拢的手(详见mac官方文档)</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/5e73b31d882682f057e25349a5049a96.png" alt="5e73b31d882682f057e25349a5049a96"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Forbidden</td>
+<td>不允许</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/de23c102ecd137236bed379a4b09b691.png" alt="de23c102ecd137236bed379a4b09b691"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>IBeam</td>
+<td>插入文本</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/e607c4162a8fb2650e48e674aaade097.png" alt="e607c4162a8fb2650e48e674aaade097"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Open</td>
+<td>摊开的手(详见mac官方文档)</td>
+<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/fe220c362c555165475f83b085ed0b94.png" alt="fe220c362c555165475f83b085ed0b94"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Pointing</td>
+<td>点击链接</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/ef7e7351ec881269ade953411d7b04e1.png" alt="ef7e7351ec881269ade953411d7b04e1"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Wait</td>
+<td>等待光标</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/b7036c503ca5c75538eb42b1fda8f60b.png" alt="b7036c503ca5c75538eb42b1fda8f60b"></td>
+<td align="center">√</td>
+</tr>
+<tr>
+<td>Window系列</td>
+<td>各个方向的移动</td>
+<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/0eb5b604ca578d6cb8d651e5a5073682.png" alt="0eb5b604ca578d6cb8d651e5a5073682"></td>
+<td align="center">√</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>PS.可以去看一下知乎上的<a href="https://zhuanlan.zhihu.com/p/36726332">这篇文章</a>。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>折腾日记</category>
+      </categories>
+      <tags>
+        <tag>MacOS鼠标更换</tag>
+      </tags>
+  </entry>
 </search>
