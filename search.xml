@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>RaspberryPi初次启动</title>
-    <url>/2021/11/12/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/</url>
+    <url>/%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>mac更换鼠标样式依靠mousecape实现，</p>
 <p><a href="https://github.com/alexzielenski/Mousecape">mousecape</a>是Github上的一个项目，作者是<a href="https://github.com/alexzielenski">alexzielenski</a>，</p>
 <p>项目是用于修改Mac系统鼠标样式的，支持动态鼠标样式。</p>
@@ -317,7 +317,7 @@
   </entry>
   <entry>
     <title>RaspberryPi初次启动</title>
-    <url>/2021/11/06/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
+    <url>/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p>
 <p>生命不息，折腾不止</p>
 <hr>
@@ -438,7 +438,7 @@
   </entry>
   <entry>
     <title>This is for my gril</title>
-    <url>/2021/10/06/This%20is%20for%20my%20gril/</url>
+    <url>/uncategorized/This%20is%20for%20my%20gril/</url>
     <content><![CDATA[<p>2岁1个月21天</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;004AFf1D1AU7I4&quot; &quot;tencent&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
@@ -472,13 +472,13 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2022/01/01/hello-world/</url>
+    <url>/uncategorized/hello-world/</url>
     <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
 ]]></content>
   </entry>
   <entry>
     <title>一个点都不能少</title>
-    <url>/2021/10/06/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
+    <url>/uncategorized/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
     <content><![CDATA[<h1 id="中国地图"><a href="#中国地图" class="headerlink" title="中国地图"></a>中国地图</h1><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/4o28b0625501ad13015501ad2bfc0135.jpg" alt="中国地图"></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong><a href="http://www.mnr.gov.cn/dt/ywbb/201908/t20190802_2451218.html">快速识别问题地图</a></strong></p>
 <p><img src="https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200322200501.png"></p>
@@ -534,7 +534,7 @@
   </entry>
   <entry>
     <title>你是人间的四月天</title>
-    <url>/2021/10/06/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
+    <url>/uncategorized/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
     <content><![CDATA[<h1 id="你是人间的四月天"><a href="#你是人间的四月天" class="headerlink" title="你是人间的四月天"></a>你是人间的四月天</h1><blockquote>
 <p><em>—— 一句爱的赞颂</em></p>
 </blockquote>
@@ -567,7 +567,7 @@
   </entry>
   <entry>
     <title>写给我亲爱的女儿</title>
-    <url>/2021/03/26/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
+    <url>/uncategorized/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
     <content><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p>
 <p>一岁8个月21天</p>
 <p>是成功断奶后的第二天</p>
