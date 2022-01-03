@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/01/01/hello-world/</url>
-    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>RaspberryPi初次启动</title>
     <url>/2021/11/06/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p>
 <p>生命不息，折腾不止</p>
 <hr>
 <h2 id="一、链接树莓派软件"><a href="#一、链接树莓派软件" class="headerlink" title="一、链接树莓派软件"></a>一、链接树莓派软件</h2><p>putty、Xshell、VNV Viewer远程桌面、VSCode</p>
-<p>Mac OS终端：ssh <a href="mailto:&#x70;&#105;&#x40;&#49;&#57;&#50;&#46;&#x31;&#54;&#56;&#46;&#x78;&#46;&#120;">&#x70;&#105;&#x40;&#49;&#57;&#50;&#46;&#x31;&#54;&#56;&#46;&#x78;&#46;&#120;</a></p>
+<p>Mac OS终端：ssh <a href="mailto:&#112;&#x69;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#x36;&#56;&#x2e;&#120;&#46;&#120;">&#112;&#x69;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#x36;&#56;&#x2e;&#120;&#46;&#120;</a></p>
 <p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/60A5142A-2E66-442A-A78A-A4A7479FD2B9.png" alt="LED亮灯状态"></p>
 <h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>这里说一下VSCode，真的太好用了</p>
 <p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-171229.png" alt="VSCode"></p>
@@ -156,122 +150,6 @@
 <p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8821635580042_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8811635580041_.pic.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8781635580038_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
 <p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8771635579793_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8741635579791_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8731635579789_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
 <p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8721635579788_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8701635579785_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8691635579782_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-]]></content>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一个点都不能少</title>
-    <url>/2021/10/06/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
-    <content><![CDATA[<h1 id="中国地图"><a href="#中国地图" class="headerlink" title="中国地图"></a>中国地图</h1><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/4o28b0625501ad13015501ad2bfc0135.jpg" alt="中国地图"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong><a href="http://www.mnr.gov.cn/dt/ywbb/201908/t20190802_2451218.html">快速识别问题地图</a></strong></p>
-<p><img src="https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200322200501.png"></p>
-<table>
-<thead>
-<tr>
-<th>来源</th>
-<th>下载地址</th>
-<th>格式</th>
-<th>类型数量</th>
-<th>类型</th>
-<th>权限</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自然资源部地图技术审查中心</td>
-<td><a href="http://bzdt.ch.mnr.gov.cn/index.html">标准地图服务</a></td>
-<td>JPG、EPS</td>
-<td>115</td>
-<td>色块/有无邻国/线划</td>
-<td>免费浏览、下载，直接使用标准地图需标注审图号。对地图内容编辑（包括放大、缩小和裁切）改动的，公开使用前需要送自然资源主管部门审核。</td>
-</tr>
-<tr>
-<td>国家基础地理信息中心</td>
-<td><a href="https://www.tianditu.gov.cn/">天地图</a></td>
-<td>API(OGC WMTS标准)</td>
-<td>9</td>
-<td>矢量底图/影像底图/地形晕渲/全球境界/注记</td>
-<td>对所有用户开放,需申请 Key</td>
-</tr>
-<tr>
-<td>中国科学院地理科学与资源研究所</td>
-<td><a href="http://www.resdc.cn/data.aspx?DATAID=200">资源环境数据云平台</a></td>
-<td>shape文件矢量数据</td>
-<td>1</td>
-<td>2015年中国省级行政边界数据</td>
-<td>需注册会员登录</td>
-</tr>
-<tr>
-<td>全国地质资料馆</td>
-<td><a href="http://ngac.org.cn/Map/List">地质图库</a></td>
-<td>WMTS</td>
-<td>5721</td>
-<td>地质相关</td>
-<td>免费公开</td>
-</tr>
-</tbody></table>
-<p>​                                                                                                                                            By<a href="https://github.com/blackboxo">blackboxo</a></p>
-]]></content>
-      <tags>
-        <tag>一点都不能少</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你是人间的四月天</title>
-    <url>/2021/10/06/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
-    <content><![CDATA[<h1 id="你是人间的四月天"><a href="#你是人间的四月天" class="headerlink" title="你是人间的四月天"></a>你是人间的四月天</h1><blockquote>
-<p><em>—— 一句爱的赞颂</em></p>
-</blockquote>
-<p><strong>我说 你是人间的四月天；</strong></p>
-<p><strong>笑响点亮了四面风；</strong></p>
-<p><strong>轻灵在春的光艳中交舞着变。</strong></p>
-<p><strong>你是四月早天里的云烟，</strong></p>
-<p><strong>黄昏吹着风的软，星子在</strong></p>
-<p><strong>无意中闪，细雨点洒在花前。</strong></p>
-<p><strong>那轻，那娉婷，你是，</strong></p>
-<p><strong>鲜妍百花的冠冕你戴着，</strong></p>
-<p><strong>你是天真，庄严，</strong></p>
-<p><strong>你是夜夜的月圆。</strong></p>
-<p><strong>雪化后那片鹅黄，你像；</strong></p>
-<p><strong>新鲜初放芽的绿，你是；</strong></p>
-<p><strong>柔嫩喜悦，水光浮动着你梦期待中白莲。</strong></p>
-<p><strong>你是一树一树的花开，</strong></p>
-<p><strong>是燕在梁间呢喃，</strong></p>
-<p><strong>——你是爱，是暖，</strong></p>
-<p><strong>是希望，</strong></p>
-<p><strong>你是人间的四月天！</strong></p>
-<hr>
-<p><strong><code>2019.07.05 我的宝贝来到这个世界</code></strong></p>
-<img src="https://gitee.com/tosspi/img/raw/master/tags/riji/1.jpg" alt="HEMU" style="zoom: 50%;" />
-
-]]></content>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>写给我亲爱的女儿</title>
-    <url>/2021/03/26/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
-    <content><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p>
-<p>一岁8个月21天</p>
-<p>是成功断奶后的第二天</p>
-<p>从此我们之间结束了36.7的母乳关系</p>
-<p>相对于一般小朋友来说 这已经不算早了 但是我仍然心存万般不舍</p>
-<p>你出乎意料的懂事 因为你对母乳的依恋都以为你会大闹 但是你却出奇的懂事</p>
-<p>断奶的第一天你发烧了 不知什么原因</p>
-<p>我很心疼 自责是不是因为断奶</p>
-<p>但是你很欢腾 只有在很想的时候问我妈妈 mei’mei 我说你是大宝宝不能吃了 你就不再说了</p>
-<p>断奶的第二个夜晚你就开始睡整夜觉 半夜只是自己醒了叫了声妈妈翻身继续睡了</p>
-<p>第一次没有一夜醒五六次来给你喂奶 我还有些不适</p>
-<p>这个点以前你都会起来夜奶今天没有 而我却失眠了</p>
-<p>我的女儿👧🏻你简直是妈妈的天使</p>
-<p>虽然你还在发烧 母乳却意料之外的断的听话</p>
-<p>我的女儿 妈妈只愿你健康快乐</p>
-<p>永远爱你❤️</p>
-<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/eb92b586ly1gowuogl2avj22c0340b1y.jpg" style="zoom:10%;" />
-
-<p>​                                                by<a href="https://weibo.com/3952260486/K7UVHoQw5">@牟云石石石</a></p>
 ]]></content>
       <tags>
         <tag>日记</tag>
@@ -590,6 +468,128 @@
       </categories>
       <tags>
         <tag>MacOS鼠标更换</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/01/01/hello-world/</url>
+    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>一个点都不能少</title>
+    <url>/2021/10/06/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
+    <content><![CDATA[<h1 id="中国地图"><a href="#中国地图" class="headerlink" title="中国地图"></a>中国地图</h1><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/4o28b0625501ad13015501ad2bfc0135.jpg" alt="中国地图"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong><a href="http://www.mnr.gov.cn/dt/ywbb/201908/t20190802_2451218.html">快速识别问题地图</a></strong></p>
+<p><img src="https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200322200501.png"></p>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>下载地址</th>
+<th>格式</th>
+<th>类型数量</th>
+<th>类型</th>
+<th>权限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>自然资源部地图技术审查中心</td>
+<td><a href="http://bzdt.ch.mnr.gov.cn/index.html">标准地图服务</a></td>
+<td>JPG、EPS</td>
+<td>115</td>
+<td>色块/有无邻国/线划</td>
+<td>免费浏览、下载，直接使用标准地图需标注审图号。对地图内容编辑（包括放大、缩小和裁切）改动的，公开使用前需要送自然资源主管部门审核。</td>
+</tr>
+<tr>
+<td>国家基础地理信息中心</td>
+<td><a href="https://www.tianditu.gov.cn/">天地图</a></td>
+<td>API(OGC WMTS标准)</td>
+<td>9</td>
+<td>矢量底图/影像底图/地形晕渲/全球境界/注记</td>
+<td>对所有用户开放,需申请 Key</td>
+</tr>
+<tr>
+<td>中国科学院地理科学与资源研究所</td>
+<td><a href="http://www.resdc.cn/data.aspx?DATAID=200">资源环境数据云平台</a></td>
+<td>shape文件矢量数据</td>
+<td>1</td>
+<td>2015年中国省级行政边界数据</td>
+<td>需注册会员登录</td>
+</tr>
+<tr>
+<td>全国地质资料馆</td>
+<td><a href="http://ngac.org.cn/Map/List">地质图库</a></td>
+<td>WMTS</td>
+<td>5721</td>
+<td>地质相关</td>
+<td>免费公开</td>
+</tr>
+</tbody></table>
+<p>​                                                                                                                                            By<a href="https://github.com/blackboxo">blackboxo</a></p>
+]]></content>
+      <tags>
+        <tag>一点都不能少</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>写给我亲爱的女儿</title>
+    <url>/2021/03/26/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
+    <content><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p>
+<p>一岁8个月21天</p>
+<p>是成功断奶后的第二天</p>
+<p>从此我们之间结束了36.7的母乳关系</p>
+<p>相对于一般小朋友来说 这已经不算早了 但是我仍然心存万般不舍</p>
+<p>你出乎意料的懂事 因为你对母乳的依恋都以为你会大闹 但是你却出奇的懂事</p>
+<p>断奶的第一天你发烧了 不知什么原因</p>
+<p>我很心疼 自责是不是因为断奶</p>
+<p>但是你很欢腾 只有在很想的时候问我妈妈 mei’mei 我说你是大宝宝不能吃了 你就不再说了</p>
+<p>断奶的第二个夜晚你就开始睡整夜觉 半夜只是自己醒了叫了声妈妈翻身继续睡了</p>
+<p>第一次没有一夜醒五六次来给你喂奶 我还有些不适</p>
+<p>这个点以前你都会起来夜奶今天没有 而我却失眠了</p>
+<p>我的女儿👧🏻你简直是妈妈的天使</p>
+<p>虽然你还在发烧 母乳却意料之外的断的听话</p>
+<p>我的女儿 妈妈只愿你健康快乐</p>
+<p>永远爱你❤️</p>
+<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/eb92b586ly1gowuogl2avj22c0340b1y.jpg" style="zoom:10%;" />
+
+<p>​                                                by<a href="https://weibo.com/3952260486/K7UVHoQw5">@牟云石石石</a></p>
+]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你是人间的四月天</title>
+    <url>/2021/10/06/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
+    <content><![CDATA[<h1 id="你是人间的四月天"><a href="#你是人间的四月天" class="headerlink" title="你是人间的四月天"></a>你是人间的四月天</h1><blockquote>
+<p><em>—— 一句爱的赞颂</em></p>
+</blockquote>
+<p><strong>我说 你是人间的四月天；</strong></p>
+<p><strong>笑响点亮了四面风；</strong></p>
+<p><strong>轻灵在春的光艳中交舞着变。</strong></p>
+<p><strong>你是四月早天里的云烟，</strong></p>
+<p><strong>黄昏吹着风的软，星子在</strong></p>
+<p><strong>无意中闪，细雨点洒在花前。</strong></p>
+<p><strong>那轻，那娉婷，你是，</strong></p>
+<p><strong>鲜妍百花的冠冕你戴着，</strong></p>
+<p><strong>你是天真，庄严，</strong></p>
+<p><strong>你是夜夜的月圆。</strong></p>
+<p><strong>雪化后那片鹅黄，你像；</strong></p>
+<p><strong>新鲜初放芽的绿，你是；</strong></p>
+<p><strong>柔嫩喜悦，水光浮动着你梦期待中白莲。</strong></p>
+<p><strong>你是一树一树的花开，</strong></p>
+<p><strong>是燕在梁间呢喃，</strong></p>
+<p><strong>——你是爱，是暖，</strong></p>
+<p><strong>是希望，</strong></p>
+<p><strong>你是人间的四月天！</strong></p>
+<hr>
+<p><strong><code>2019.07.05 我的宝贝来到这个世界</code></strong></p>
+<img src="https://gitee.com/tosspi/img/raw/master/tags/riji/1.jpg" alt="HEMU" style="zoom: 50%;" />
+
+]]></content>
+      <tags>
+        <tag>日记</tag>
       </tags>
   </entry>
 </search>
