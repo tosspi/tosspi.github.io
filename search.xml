@@ -1,595 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>RaspberryPi初次启动</title>
-    <url>/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p>
-<p>生命不息，折腾不止</p>
-<hr>
-<h2 id="一、链接树莓派软件"><a href="#一、链接树莓派软件" class="headerlink" title="一、链接树莓派软件"></a>一、链接树莓派软件</h2><p>putty、Xshell、VNV Viewer远程桌面、VSCode</p>
-<p>Mac OS终端：ssh <a href="mailto:&#112;&#105;&#64;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#x38;&#46;&#x78;&#x2e;&#x78;">&#112;&#105;&#64;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#x38;&#46;&#x78;&#x2e;&#x78;</a></p>
-<p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/60A5142A-2E66-442A-A78A-A4A7479FD2B9.png" alt="LED亮灯状态"></p>
-<h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>这里说一下VSCode，真的太好用了</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-171229.png" alt="VSCode"></p>
-<p>在线版<a href="https://vscode.dev/">VSCode</a></p>
-<p>我使用的是MAC版的，下载地址<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
-<h4 id="1、设置中文"><a href="#1、设置中文" class="headerlink" title="1、设置中文"></a>1、设置中文</h4><p>在拓展里搜索Chinese</p>
-<p>然后安装重启</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8981636209087_.pic_hd.jpg" alt="VSCode设置中文"></p>
-<h4 id="2、安装Remote-SSH"><a href="#2、安装Remote-SSH" class="headerlink" title="2、安装Remote SSH"></a>2、安装Remote SSH</h4><p>在拓展里搜索Remote SSH安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-223928.png" alt="安装 Remote SSH"></p>
-<h4 id="4、添加树莓派"><a href="#4、添加树莓派" class="headerlink" title="4、添加树莓派"></a>4、添加树莓派</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224521.png" alt="添加树莓派链接"></p>
-<p>然后输入ssh 用户名@ip -A</p>
-<p>后期也可以更改，我这里是远程链接的</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224703.png" alt="更改SSH"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224736.png" alt="添加树莓派2"></p>
-<p>Host:显示的名称</p>
-<p>HOSTName:树莓派的IP</p>
-<p>User:用户名</p>
-<p>Port:端口号</p>
-<h4 id="5、链接树莓派管理文件及打开终端"><a href="#5、链接树莓派管理文件及打开终端" class="headerlink" title="5、链接树莓派管理文件及打开终端"></a>5、链接树莓派管理文件及打开终端</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225350.png" alt="链接树莓派管理文件"></p>
-<p>输入密码</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225422.png" alt="输入密码"></p>
-<p>点击上面的终端</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225600.png" alt="链接树莓派打开终端"></p>
-<p>接下来愉快的使用树莓派吧</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225705.png" alt="愉快的使用树莓派把"></p>
-<h2 id="二、初始账号密码"><a href="#二、初始账号密码" class="headerlink" title="二、初始账号密码"></a>二、初始账号密码</h2><p>初始账号密码：pi  raspberry</p>
-<p>链接成功后输入passwd可修改初始密码</p>
-<h2 id="三、安装中文支持"><a href="#三、安装中文支持" class="headerlink" title="三、安装中文支持"></a>三、安装中文支持</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ttf-wqy-zenhei #安装文泉驿字体</span><br><span class="line">sudo fc-cache #刷新字库缓存</span><br><span class="line">sudo dpkg-reconfigure locales #配置字体</span><br><span class="line">sudo raspi-config #设置</span><br><span class="line">sudo apt-get install scim-pinyin #安装中文拼音输入法</span><br><span class="line">设置显示中文。</span><br><span class="line">终端下执行命令：sudo raspi-config</span><br><span class="line">选择：4 Localisation Options  --&gt;  I1 Change Locale</span><br><span class="line">操作提示：按空格键在前面打勾或去掉勾（星号=勾），PageUp PageDown快速翻页，Tab键跳到OK按钮上</span><br><span class="line">去掉en_GB.UTF-8 UTF-8，</span><br><span class="line">勾上：“en_US.UTF-8 UTF-8”、“zh_CN.UTF-8 UTF-8”、“zh_CN.GBK GBK”</span><br><span class="line">下一屏幕默认语言选zh_CN.UTF-8。</span><br></pre></td></tr></table></figure>
-
-<p>在众多选项中找到<strong>en_GB.UTF-8 UTF-8，</strong>系统默认是这个，前面有个‘*’，敲空格可以去掉这个星号，用pagedown翻页比较快，去掉之后从里面找到<strong>”en_US.UTF-8 UTF-8“，”zh_CN.UTF-8 UTF-8“，”zh_CN.GBK GBK”</strong>这三个选项， 用空格键在前面加上星号。</p>
-<h2 id="四、替换软件源"><a href="#四、替换软件源" class="headerlink" title="四、替换软件源"></a>四、替换软件源</h2><p>软件源在线配置工具已上线，一键生成更新命令，再也不用手打指令啦</p>
-<p><a href="https://tech.biko.pub/tool#/rpi-apt-sources">https://tech.biko.pub/tool#/rpi-apt-sources</a></p>
-<p>（~# cat /etc/debian_version 查看版本号）</p>
-<p>Debian10自动执行脚本：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -qO- https://tech.biko.pub/resource/rpi-replace-apt-source-buster.sh | sudo bash</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/">https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/</a>  #清华大学开源软件镜像站</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update 更新升级连接文件</span><br><span class="line">sudo apt-get dist-upgrade 更新并安装程序</span><br><span class="line">sudo apt-get clean 清空系统不使用的旧文件</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>中国科学技术大学</p>
-<p>Raspbian <a href="http://mirrors.ustc.edu.cn/raspbian/raspbian/">http://mirrors.ustc.edu.cn/raspbian/raspbian/</a></p>
-<p>阿里云</p>
-<p>Raspbian <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.aliyun.com/raspbian/raspbian/</a></p>
-<p>清华大学</p>
-<p>Raspbian <a href="http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</a></p>
-<p>华中科技大学</p>
-<p>Raspbian <a href="http://mirrors.hustunique.com/raspbian/raspbian/">http://mirrors.hustunique.com/raspbian/raspbian/</a></p>
-<p>Arch Linux ARM <a href="http://mirrors.hustunique.com/archlinuxarm/">http://mirrors.hustunique.com/archlinuxarm/</a></p>
-<p>华南农业大学（华南用户）</p>
-<p>Raspbian <a href="http://mirrors.scau.edu.cn/raspbian/">http://mirrors.scau.edu.cn/raspbian/</a></p>
-<p>大连东软信息学院源（北方用户）</p>
-<p>Raspbian <a href="http://mirrors.neusoft.edu.cn/raspbian/raspbian/">http://mirrors.neusoft.edu.cn/raspbian/raspbian/</a></p>
-<p>重庆大学源（中西部用户）</p>
-<p>Raspbian <a href="http://mirrors.cqu.edu.cn/Raspbian/raspbian/">http://mirrors.cqu.edu.cn/Raspbian/raspbian/</a></p>
-<p>中山大学 已跳转至中国科学技术大学源</p>
-<p>Raspbian <a href="http://mirror.sysu.edu.cn/raspbian/raspbian/">http://mirror.sysu.edu.cn/raspbian/raspbian/</a></p>
-<p>新加坡国立大学</p>
-<p>Raspbian <a href="http://mirror.nus.edu.sg/raspbian/raspbian">http://mirror.nus.edu.sg/raspbian/raspbian</a></p>
-<p>牛津大学</p>
-<p>Raspbian <a href="http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/">http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/</a></p>
-<p>韩国KAIST大学</p>
-<p>Raspbian <a href="http://ftp.kaist.ac.kr/raspbian/raspbian/">http://ftp.kaist.ac.kr/raspbian/raspbian/</a></p>
-</blockquote>
-<h3 id="PS-另一种换源方式："><a href="#PS-另一种换源方式：" class="headerlink" title="PS.另一种换源方式："></a>PS.另一种换源方式：</h3><h4 id="1、备份原始文件（可选步骤）"><a href="#1、备份原始文件（可选步骤）" class="headerlink" title="1、备份原始文件（可选步骤）"></a>1、<strong>备份原始文件（可选步骤）</strong></h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line">sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak</span><br></pre></td></tr></table></figure>
-
-<h4 id="2、编辑软件源配置"><a href="#2、编辑软件源配置" class="headerlink" title="2、编辑软件源配置"></a>2、<strong>编辑软件源配置</strong></h4><p>编辑 /etc/apt/sources.list 文件（软件源），参考如下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
-
-<p>删除原文件所有内容，</p>
-<p><strong>buster</strong> 系统用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br></pre></td></tr></table></figure>
-
-<p>注：网址末尾的raspbian重复两次是必须的。因为Raspbian的仓库中除了APT软件源还包含其他代码。APT软件源不在仓库的根目录，而在raspbian/</p>
-<p>子目录下。</p>
-<p><strong>stretch</strong> 系统用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<p><strong>jessie</strong> 用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<p><strong>wheezy</strong> 用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<p>（<strong>buster、</strong>stretch、<strong>jessie、</strong>wheezy为Debian版本号）</p>
-<p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p>
-<p><strong>编辑系统源配置</strong></p>
-<p>编辑 /etc/apt/sources.list.d/raspi.list 文件（系统更新源），参考如下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>同样修改首行网址，修改后文件如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui</span><br><span class="line"># Uncomment line below then &#x27;apt-get update&#x27; to enable &#x27;apt-get source&#x27;</span><br><span class="line">#deb-src http://archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<p>jessie、wheezy 版本的系统按照之前修改软件源的的规则修改即可，这里不再赘述。</p>
-<p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p>
-<p><strong>更新</strong></p>
-<p>配置好了可以尝试更新，用下面的命令分别更新软件源列表、软件版本和系统内核版本，完整的更新过程需要等挺久的。一般只用更新软件源列表即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#更新软件源列表</span><br><span class="line">sudo apt-get update</span><br><span class="line">#更新软件版本</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line">sudo apt-get dist-upgrade</span><br><span class="line">#更新系统内核</span><br><span class="line">sudo rpi-update</span><br></pre></td></tr></table></figure>
-
-<p>如果需要，你可以执行以下命令将Raspbian public key加入你的 apt-get keyring :</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/uncategorized/hello-world/"/>
+      <url>/uncategorized/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mac更换鼠标样式</title>
+      <link href="/%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/"/>
+      <url>/%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>mac更换鼠标样式依靠mousecape实现，</p><p><a href="https://github.com/alexzielenski/Mousecape">mousecape</a>是Github上的一个项目，作者是<a href="https://github.com/alexzielenski">alexzielenski</a>，</p><p>项目是用于修改Mac系统鼠标样式的，支持动态鼠标样式。</p><h1 id="mousecape使用"><a href="#mousecape使用" class="headerlink" title="mousecape使用"></a>mousecape使用</h1><p>可以去<a href="https://github.com/alexzielenski/Mousecape/releases/tag/1813">Github</a>下载，也可以从<a href="https://ibelife.cowtransfer.com/s/f6e5fd85dfe943">这里下载</a>，下载解压后拖入Applications并安装一下帮助工具就好啦(因为我已经安装了，所以显示的是<em><strong>Uninstall Helper Tool</strong></em>)。</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211110-162606.png" alt="help tool截图"></p><h1 id="添加鼠标样式"><a href="#添加鼠标样式" class="headerlink" title="添加鼠标样式"></a>添加鼠标样式</h1><h2 id="指针样式准备"><a href="#指针样式准备" class="headerlink" title="指针样式准备"></a>指针样式准备</h2><p>鼠标样式可以自己制作采用图片的方式来制作，在此之前我们可以制作一些png格式的图片(可以用Photoshop之类的软件)，也可以自己下载一些已经制作好的鼠标指针，我是在<a href="https://zhutix.com/tag/cursors/">致美化</a>下的，下载完解压，选用cur格式的。</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111028.png" alt="鼠标指针解压截图"></p><h2 id="制作并使用"><a href="#制作并使用" class="headerlink" title="制作并使用"></a>制作并使用</h2><p>依次点击左上角File👉🏻New Cape</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111459.png" alt="新建样式"></p><p>然后会出现一个新的样式Unnamed，右键点击Edit</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111525.png" alt="添加样式2"></p><p>在此页面可以修改名字、作者、文件名、版本号、Retina选项。</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111610.png" alt="新建样式2"></p><blockquote><p>这里解释一下Retina是什么，Retina是一种显示标准。不一定所有的Mac都是Retina屏，可以看一下关于本机的系统报告，硬件中显示器一栏由显示器类型，如果显示的是内建视网膜，说明是Retina屏。</p><p>这个时候就勾选Retina，但其实区别不大。</p><p>Mac Retina <a href="https://support.apple.com/zh-cn/HT202471">官方文档</a> </p></blockquote><p>填写好信息以后，右键选择New Cursor，也可以点击左下角『+』号添加</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111643.png" alt="新建样式"></p><p>填写相关信息</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111704.png" alt="新建样式4"></p><ul><li>cursor参数值的设定：<ol><li>可以把样式文件拖到右下角虚线框里，如果有工夫可以把2x、5x、10x都填充了，提高鼠标放大后的清晰度。</li><li>然后Type可以看一下下文对指针样式的说明，这里的Arrow代表默认箭头。</li><li>Frames代表帧数。</li><li>HotSpot就是实际点击位置，为了确保我们点击不会有偏差，一般会设置在箭头<code>&lt;-</code>的尖尖上或者移动箭头<code>&lt;-&gt;</code>的中心。</li><li>Size就是大小啦。</li></ol></li></ul><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111752.png" alt="新建样式"></p><p>在拖完样式以后会看到有个小红点，然后修改HotSpot调整实际点击位置</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-113902.png" alt="添加样式5"></p><p>所有样式添加完成以后，右键点击Apply就可以看到鼠标样式已经更改。</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-114202.png" alt="应用样式"></p><h2 id="取消鼠标指针修改"><a href="#取消鼠标指针修改" class="headerlink" title="取消鼠标指针修改"></a>取消鼠标指针修改</h2><p>点击右上角Capes👉🏻Remove Cape就可以了</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-114211.png" alt="取消样式修改"></p><h1 id="关于指针样式的一些说明"><a href="#关于指针样式的一些说明" class="headerlink" title="关于指针样式的一些说明"></a>关于指针样式的一些说明</h1><h2 id="Mac-OS鼠标指针样式的官方文档"><a href="#Mac-OS鼠标指针样式的官方文档" class="headerlink" title="Mac OS鼠标指针样式的官方文档"></a>Mac OS鼠标指针样式的官方文档</h2><p>官方文档是稍微有一点小bug的，比如：</p><ul><li>错别字 中文版文档：“当您选择图像中的句型(矩形)区域时，该光标会出现。”</li><li>不详尽 比如move系列是有斜对角方向的，官方文档没有写，而且样式也稍微有些不一样；可能还有其他指针样式的遗漏。</li></ul><blockquote><p><a href="https://support.apple.com/zh-cn/guide/mac-help/mh35695/10.13/mac/10.13">中文官方文档</a></p><p><a href="https://support.apple.com/en-au/guide/mac-help/mh35695/mac">英文官方文档</a></p></blockquote><h2 id="mousecape的指针样式命名"><a href="#mousecape的指针样式命名" class="headerlink" title="mousecape的指针样式命名"></a>mousecape的指针样式命名</h2><p>mac系统的指针样式是稍微有一点小bug的，比如：</p><ul><li>有一些样式会失效，比如制作替身、拖拽拷贝</li><li>有一些样式会闪烁，比如点击链接等手形指针</li></ul><table><thead><tr><th align="center">mousecape命名</th><th align="center">解释</th><th align="center">展示</th><th align="center">可用</th></tr></thead><tbody><tr><td align="center">Alias</td><td align="center">制作替身</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/dde1ed13deb66e74f5c0996556c1da05.png" alt="dde1ed13deb66e74f5c0996556c1da05"></td><td align="center">×</td></tr><tr><td align="center">Arrow</td><td align="center">默认箭头</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/a0d5e859e5f2b01dbbf81dfc38a3a92f.png" alt="a0d5e859e5f2b01dbbf81dfc38a3a92f"></td><td align="center">√</td></tr><tr><td align="center">Busy</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Camera</td><td align="center">可能是旧版的Camera</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Camera2</td><td align="center">捕捉窗口或菜单</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/a1d807299b5280d18764e80ef9803960.png" alt="a1d807299b5280d18764e80ef9803960"></td><td align="center">√</td></tr><tr><td align="center">Cell系列</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Closed</td><td align="center">并拢的手(详见mac官方文档)</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/5e73b31d882682f057e25349a5049a96.png" alt="5e73b31d882682f057e25349a5049a96"></td><td align="center">√</td></tr><tr><td align="center">Copy</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Copy Drag</td><td align="center">拖拽拷贝</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/7dcad94fa0f159c669ab6a7de8fc1a41.png" alt="7dcad94fa0f159c669ab6a7de8fc1a41"></td><td align="center">×</td></tr><tr><td align="center">Counting系列</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Crosshair</td><td align="center">图片的矩形区域</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/56bf017e5b6d1f6ca6dfc0813ff2de7b.png" alt="56bf017e5b6d1f6ca6dfc0813ff2de7b"></td><td align="center">×</td></tr><tr><td align="center">Crosshair 2</td><td align="center">截屏选择十字</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/b5c1bfedcd3c6353a3f0ea987a760d43.png" alt="b5c1bfedcd3c6353a3f0ea987a760d43"></td><td align="center">×</td></tr><tr><td align="center">Ctx系列</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Empty</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Forbidden</td><td align="center">不允许</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/de23c102ecd137236bed379a4b09b691.png" alt="de23c102ecd137236bed379a4b09b691"></td><td align="center">√</td></tr><tr><td align="center">Help</td><td align="center">(好像基本见不到了，在抓图可以看到他的身影)</td><td align="center">?</td><td align="center">×</td></tr><tr><td align="center">IBeam</td><td align="center">插入文本</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/e607c4162a8fb2650e48e674aaade097.png" alt="e607c4162a8fb2650e48e674aaade097"></td><td align="center">√</td></tr><tr><td align="center">IBeam H.</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">IBeamXOR</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Move</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Link</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Open</td><td align="center">摊开的手(详见mac官方文档)</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/fe220c362c555165475f83b085ed0b94.png" alt="fe220c362c555165475f83b085ed0b94"></td><td align="center">√</td></tr><tr><td align="center">Pointing</td><td align="center">点击链接</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/ef7e7351ec881269ade953411d7b04e1.png" alt="ef7e7351ec881269ade953411d7b04e1"></td><td align="center">√</td></tr><tr><td align="center">Poof</td><td align="center">null</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Resize系列</td><td align="center">(应该是与window系列合并成移动系列了)</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Wait</td><td align="center">等待光标</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/b7036c503ca5c75538eb42b1fda8f60b.png" alt="b7036c503ca5c75538eb42b1fda8f60b"></td><td align="center">√</td></tr><tr><td align="center">Window系列</td><td align="center">各个方向的移动</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/0eb5b604ca578d6cb8d651e5a5073682.png" alt="0eb5b604ca578d6cb8d651e5a5073682"></td><td align="center">√</td></tr><tr><td align="center">Zoom In</td><td align="center">放大</td><td align="center">null</td><td align="center">×</td></tr><tr><td align="center">Zoom Out</td><td align="center">缩小</td><td align="center">null</td><td align="center">×</td></tr></tbody></table><table><thead><tr><th>mousecape命名</th><th>解释</th><th align="center">展示</th><th align="center">可用</th></tr></thead><tbody><tr><td>Arrow</td><td>默认箭头</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/a0d5e859e5f2b01dbbf81dfc38a3a92f.png" alt="a0d5e859e5f2b01dbbf81dfc38a3a92f"></td><td align="center">√</td></tr><tr><td>Camera2</td><td>捕捉窗口或菜单</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/a1d807299b5280d18764e80ef9803960.png" alt="a1d807299b5280d18764e80ef9803960"></td><td align="center">√</td></tr><tr><td>Closed</td><td>并拢的手(详见mac官方文档)</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/5e73b31d882682f057e25349a5049a96.png" alt="5e73b31d882682f057e25349a5049a96"></td><td align="center">√</td></tr><tr><td>Forbidden</td><td>不允许</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/de23c102ecd137236bed379a4b09b691.png" alt="de23c102ecd137236bed379a4b09b691"></td><td align="center">√</td></tr><tr><td>IBeam</td><td>插入文本</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/e607c4162a8fb2650e48e674aaade097.png" alt="e607c4162a8fb2650e48e674aaade097"></td><td align="center">√</td></tr><tr><td>Open</td><td>摊开的手(详见mac官方文档)</td><td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/fe220c362c555165475f83b085ed0b94.png" alt="fe220c362c555165475f83b085ed0b94"></td><td align="center">√</td></tr><tr><td>Pointing</td><td>点击链接</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/ef7e7351ec881269ade953411d7b04e1.png" alt="ef7e7351ec881269ade953411d7b04e1"></td><td align="center">√</td></tr><tr><td>Wait</td><td>等待光标</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/b7036c503ca5c75538eb42b1fda8f60b.png" alt="b7036c503ca5c75538eb42b1fda8f60b"></td><td align="center">√</td></tr><tr><td>Window系列</td><td>各个方向的移动</td><td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/0eb5b604ca578d6cb8d651e5a5073682.png" alt="0eb5b604ca578d6cb8d651e5a5073682"></td><td align="center">√</td></tr></tbody></table><blockquote><p>PS.可以去看一下知乎上的<a href="https://zhuanlan.zhihu.com/p/36726332">这篇文章</a>。</p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>Raspberry Pi</category>
+          
+          <category> 折腾日记 </category>
+          
       </categories>
-      <tags>
-        <tag>Raspberry Pi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>This is for my gril</title>
-    <url>/uncategorized/This%20is%20for%20my%20gril/</url>
-    <content><![CDATA[<p>2岁1个月21天</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;004AFf1D1AU7I4&quot; &quot;tencent&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" />
-
-<p>服了我闺女的感性的一天</p>
-<p>今晚睡前她妈妈和她在翻手机里她小时候的照片  </p>
-<p>一边看一边在给她讲小时候的故事</p>
-<p>她俩都看的特别认真</p>
-<p>因为时间原因 妈妈说先看这些吧 剩下的明天再看</p>
-<p>于是她妈妈就总结了一下说：</p>
-<p>你小时候爸爸妈妈很爱你 </p>
-<p>大了爸爸妈妈更爱你 </p>
-<p>希望你健康长大 不要生病 </p>
-<p>等妈妈总结完成看我闺女 </p>
-<p>我闺女满眼泪水 </p>
-<p>我问她：你怎么了？  </p>
-<p>我闺女就哇哇大哭了</p>
-<p>我…………最后哭睡了 …………</p>
-<p>最后我想说：时间可真快啊  我的女孩已经这么大了</p>
-<p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8761635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8711635579786_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8751635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8881635580066_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8861635580050_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8851635580047_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8841635580046_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8831635580044_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8821635580042_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8811635580041_.pic.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8781635580038_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8771635579793_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8741635579791_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8731635579789_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8721635579788_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8701635579785_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8691635579782_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-]]></content>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/hello-world/</url>
-    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>一个点都不能少</title>
-    <url>/uncategorized/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
-    <content><![CDATA[<h1 id="中国地图"><a href="#中国地图" class="headerlink" title="中国地图"></a>中国地图</h1><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/4o28b0625501ad13015501ad2bfc0135.jpg" alt="中国地图"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong><a href="http://www.mnr.gov.cn/dt/ywbb/201908/t20190802_2451218.html">快速识别问题地图</a></strong></p>
-<p><img src="https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200322200501.png"></p>
-<table>
-<thead>
-<tr>
-<th>来源</th>
-<th>下载地址</th>
-<th>格式</th>
-<th>类型数量</th>
-<th>类型</th>
-<th>权限</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自然资源部地图技术审查中心</td>
-<td><a href="http://bzdt.ch.mnr.gov.cn/index.html">标准地图服务</a></td>
-<td>JPG、EPS</td>
-<td>115</td>
-<td>色块/有无邻国/线划</td>
-<td>免费浏览、下载，直接使用标准地图需标注审图号。对地图内容编辑（包括放大、缩小和裁切）改动的，公开使用前需要送自然资源主管部门审核。</td>
-</tr>
-<tr>
-<td>国家基础地理信息中心</td>
-<td><a href="https://www.tianditu.gov.cn/">天地图</a></td>
-<td>API(OGC WMTS标准)</td>
-<td>9</td>
-<td>矢量底图/影像底图/地形晕渲/全球境界/注记</td>
-<td>对所有用户开放,需申请 Key</td>
-</tr>
-<tr>
-<td>中国科学院地理科学与资源研究所</td>
-<td><a href="http://www.resdc.cn/data.aspx?DATAID=200">资源环境数据云平台</a></td>
-<td>shape文件矢量数据</td>
-<td>1</td>
-<td>2015年中国省级行政边界数据</td>
-<td>需注册会员登录</td>
-</tr>
-<tr>
-<td>全国地质资料馆</td>
-<td><a href="http://ngac.org.cn/Map/List">地质图库</a></td>
-<td>WMTS</td>
-<td>5721</td>
-<td>地质相关</td>
-<td>免费公开</td>
-</tr>
-</tbody></table>
-<p>​                                                                                                                                            By<a href="https://github.com/blackboxo">blackboxo</a></p>
-]]></content>
-      <tags>
-        <tag>一点都不能少</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mac更换鼠标样式</title>
-    <url>/%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>mac更换鼠标样式依靠mousecape实现，</p>
-<p><a href="https://github.com/alexzielenski/Mousecape">mousecape</a>是Github上的一个项目，作者是<a href="https://github.com/alexzielenski">alexzielenski</a>，</p>
-<p>项目是用于修改Mac系统鼠标样式的，支持动态鼠标样式。</p>
-<h1 id="mousecape使用"><a href="#mousecape使用" class="headerlink" title="mousecape使用"></a>mousecape使用</h1><p>可以去<a href="https://github.com/alexzielenski/Mousecape/releases/tag/1813">Github</a>下载，也可以从<a href="https://ibelife.cowtransfer.com/s/f6e5fd85dfe943">这里下载</a>，下载解压后拖入Applications并安装一下帮助工具就好啦(因为我已经安装了，所以显示的是<em><strong>Uninstall Helper Tool</strong></em>)。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211110-162606.png" alt="help tool截图"></p>
-<h1 id="添加鼠标样式"><a href="#添加鼠标样式" class="headerlink" title="添加鼠标样式"></a>添加鼠标样式</h1><h2 id="指针样式准备"><a href="#指针样式准备" class="headerlink" title="指针样式准备"></a>指针样式准备</h2><p>鼠标样式可以自己制作采用图片的方式来制作，在此之前我们可以制作一些png格式的图片(可以用Photoshop之类的软件)，也可以自己下载一些已经制作好的鼠标指针，我是在<a href="https://zhutix.com/tag/cursors/">致美化</a>下的，下载完解压，选用cur格式的。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111028.png" alt="鼠标指针解压截图"></p>
-<h2 id="制作并使用"><a href="#制作并使用" class="headerlink" title="制作并使用"></a>制作并使用</h2><p>依次点击左上角File👉🏻New Cape</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111459.png" alt="新建样式"></p>
-<p>然后会出现一个新的样式Unnamed，右键点击Edit</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111525.png" alt="添加样式2"></p>
-<p>在此页面可以修改名字、作者、文件名、版本号、Retina选项。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111610.png" alt="新建样式2"></p>
-<blockquote>
-<p>这里解释一下Retina是什么，Retina是一种显示标准。不一定所有的Mac都是Retina屏，可以看一下关于本机的系统报告，硬件中显示器一栏由显示器类型，如果显示的是内建视网膜，说明是Retina屏。</p>
-<p>这个时候就勾选Retina，但其实区别不大。</p>
-<p>Mac Retina <a href="https://support.apple.com/zh-cn/HT202471">官方文档</a> </p>
-</blockquote>
-<p>填写好信息以后，右键选择New Cursor，也可以点击左下角『+』号添加</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111643.png" alt="新建样式"></p>
-<p>填写相关信息</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111704.png" alt="新建样式4"></p>
-<ul>
-<li>cursor参数值的设定：<ol>
-<li>可以把样式文件拖到右下角虚线框里，如果有工夫可以把2x、5x、10x都填充了，提高鼠标放大后的清晰度。</li>
-<li>然后Type可以看一下下文对指针样式的说明，这里的Arrow代表默认箭头。</li>
-<li>Frames代表帧数。</li>
-<li>HotSpot就是实际点击位置，为了确保我们点击不会有偏差，一般会设置在箭头<code>&lt;-</code>的尖尖上或者移动箭头<code>&lt;-&gt;</code>的中心。</li>
-<li>Size就是大小啦。</li>
-</ol>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-111752.png" alt="新建样式"></p>
-<p>在拖完样式以后会看到有个小红点，然后修改HotSpot调整实际点击位置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-113902.png" alt="添加样式5"></p>
-<p>所有样式添加完成以后，右键点击Apply就可以看到鼠标样式已经更改。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-114202.png" alt="应用样式"></p>
-<h2 id="取消鼠标指针修改"><a href="#取消鼠标指针修改" class="headerlink" title="取消鼠标指针修改"></a>取消鼠标指针修改</h2><p>点击右上角Capes👉🏻Remove Cape就可以了</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211112-114211.png" alt="取消样式修改"></p>
-<h1 id="关于指针样式的一些说明"><a href="#关于指针样式的一些说明" class="headerlink" title="关于指针样式的一些说明"></a>关于指针样式的一些说明</h1><h2 id="Mac-OS鼠标指针样式的官方文档"><a href="#Mac-OS鼠标指针样式的官方文档" class="headerlink" title="Mac OS鼠标指针样式的官方文档"></a>Mac OS鼠标指针样式的官方文档</h2><p>官方文档是稍微有一点小bug的，比如：</p>
-<ul>
-<li>错别字 中文版文档：“当您选择图像中的句型(矩形)区域时，该光标会出现。”</li>
-<li>不详尽 比如move系列是有斜对角方向的，官方文档没有写，而且样式也稍微有些不一样；可能还有其他指针样式的遗漏。</li>
-</ul>
-<blockquote>
-<p><a href="https://support.apple.com/zh-cn/guide/mac-help/mh35695/10.13/mac/10.13">中文官方文档</a></p>
-<p><a href="https://support.apple.com/en-au/guide/mac-help/mh35695/mac">英文官方文档</a></p>
-</blockquote>
-<h2 id="mousecape的指针样式命名"><a href="#mousecape的指针样式命名" class="headerlink" title="mousecape的指针样式命名"></a>mousecape的指针样式命名</h2><p>mac系统的指针样式是稍微有一点小bug的，比如：</p>
-<ul>
-<li>有一些样式会失效，比如制作替身、拖拽拷贝</li>
-<li>有一些样式会闪烁，比如点击链接等手形指针</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">mousecape命名</th>
-<th align="center">解释</th>
-<th align="center">展示</th>
-<th align="center">可用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Alias</td>
-<td align="center">制作替身</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/dde1ed13deb66e74f5c0996556c1da05.png" alt="dde1ed13deb66e74f5c0996556c1da05"></td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Arrow</td>
-<td align="center">默认箭头</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/a0d5e859e5f2b01dbbf81dfc38a3a92f.png" alt="a0d5e859e5f2b01dbbf81dfc38a3a92f"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Busy</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Camera</td>
-<td align="center">可能是旧版的Camera</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Camera2</td>
-<td align="center">捕捉窗口或菜单</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/a1d807299b5280d18764e80ef9803960.png" alt="a1d807299b5280d18764e80ef9803960"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Cell系列</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Closed</td>
-<td align="center">并拢的手(详见mac官方文档)</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/5e73b31d882682f057e25349a5049a96.png" alt="5e73b31d882682f057e25349a5049a96"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Copy</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Copy Drag</td>
-<td align="center">拖拽拷贝</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/7dcad94fa0f159c669ab6a7de8fc1a41.png" alt="7dcad94fa0f159c669ab6a7de8fc1a41"></td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Counting系列</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Crosshair</td>
-<td align="center">图片的矩形区域</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/56bf017e5b6d1f6ca6dfc0813ff2de7b.png" alt="56bf017e5b6d1f6ca6dfc0813ff2de7b"></td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Crosshair 2</td>
-<td align="center">截屏选择十字</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/b5c1bfedcd3c6353a3f0ea987a760d43.png" alt="b5c1bfedcd3c6353a3f0ea987a760d43"></td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Ctx系列</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Empty</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Forbidden</td>
-<td align="center">不允许</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/de23c102ecd137236bed379a4b09b691.png" alt="de23c102ecd137236bed379a4b09b691"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Help</td>
-<td align="center">(好像基本见不到了，在抓图可以看到他的身影)</td>
-<td align="center">?</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">IBeam</td>
-<td align="center">插入文本</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/e607c4162a8fb2650e48e674aaade097.png" alt="e607c4162a8fb2650e48e674aaade097"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">IBeam H.</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">IBeamXOR</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Move</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Link</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Open</td>
-<td align="center">摊开的手(详见mac官方文档)</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/fe220c362c555165475f83b085ed0b94.png" alt="fe220c362c555165475f83b085ed0b94"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Pointing</td>
-<td align="center">点击链接</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/ef7e7351ec881269ade953411d7b04e1.png" alt="ef7e7351ec881269ade953411d7b04e1"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Poof</td>
-<td align="center">null</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Resize系列</td>
-<td align="center">(应该是与window系列合并成移动系列了)</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Wait</td>
-<td align="center">等待光标</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/b7036c503ca5c75538eb42b1fda8f60b.png" alt="b7036c503ca5c75538eb42b1fda8f60b"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Window系列</td>
-<td align="center">各个方向的移动</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/0eb5b604ca578d6cb8d651e5a5073682.png" alt="0eb5b604ca578d6cb8d651e5a5073682"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td align="center">Zoom In</td>
-<td align="center">放大</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-<tr>
-<td align="center">Zoom Out</td>
-<td align="center">缩小</td>
-<td align="center">null</td>
-<td align="center">×</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>mousecape命名</th>
-<th>解释</th>
-<th align="center">展示</th>
-<th align="center">可用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Arrow</td>
-<td>默认箭头</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/a0d5e859e5f2b01dbbf81dfc38a3a92f.png" alt="a0d5e859e5f2b01dbbf81dfc38a3a92f"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Camera2</td>
-<td>捕捉窗口或菜单</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/a1d807299b5280d18764e80ef9803960.png" alt="a1d807299b5280d18764e80ef9803960"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Closed</td>
-<td>并拢的手(详见mac官方文档)</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/zh_CN/5e73b31d882682f057e25349a5049a96.png" alt="5e73b31d882682f057e25349a5049a96"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Forbidden</td>
-<td>不允许</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/de23c102ecd137236bed379a4b09b691.png" alt="de23c102ecd137236bed379a4b09b691"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>IBeam</td>
-<td>插入文本</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/e607c4162a8fb2650e48e674aaade097.png" alt="e607c4162a8fb2650e48e674aaade097"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Open</td>
-<td>摊开的手(详见mac官方文档)</td>
-<td align="center"><img src="https://help.apple.com/assets/5E1917EE680CE2662245B09C/5E1917F1680CE2662245B0A3/en_AU/fe220c362c555165475f83b085ed0b94.png" alt="fe220c362c555165475f83b085ed0b94"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Pointing</td>
-<td>点击链接</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/ef7e7351ec881269ade953411d7b04e1.png" alt="ef7e7351ec881269ade953411d7b04e1"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Wait</td>
-<td>等待光标</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/b7036c503ca5c75538eb42b1fda8f60b.png" alt="b7036c503ca5c75538eb42b1fda8f60b"></td>
-<td align="center">√</td>
-</tr>
-<tr>
-<td>Window系列</td>
-<td>各个方向的移动</td>
-<td align="center"><img src="https://help.apple.com/assets/5AA195BD094622847B7F3DA3/5AA195BE094622847B7F3DAA/zh_CN/0eb5b604ca578d6cb8d651e5a5073682.png" alt="0eb5b604ca578d6cb8d651e5a5073682"></td>
-<td align="center">√</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>PS.可以去看一下知乎上的<a href="https://zhuanlan.zhihu.com/p/36726332">这篇文章</a>。</p>
-</blockquote>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> MacOS鼠标更换 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RaspberryPi初次启动</title>
+      <link href="/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/"/>
+      <url>/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p><p>生命不息，折腾不止</p><hr><h2 id="一、链接树莓派软件"><a href="#一、链接树莓派软件" class="headerlink" title="一、链接树莓派软件"></a>一、链接树莓派软件</h2><p>putty、Xshell、VNV Viewer远程桌面、VSCode</p><p>Mac OS终端：ssh <a href="mailto:&#112;&#105;&#64;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#56;&#x2e;&#120;&#46;&#x78;">&#112;&#105;&#64;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#56;&#x2e;&#120;&#46;&#x78;</a></p><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/60A5142A-2E66-442A-A78A-A4A7479FD2B9.png" alt="LED亮灯状态"></p><h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>这里说一下VSCode，真的太好用了</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-171229.png" alt="VSCode"></p><p>在线版<a href="https://vscode.dev/">VSCode</a></p><p>我使用的是MAC版的，下载地址<a href="https://code.visualstudio.com/">Visual Studio Code</a></p><h4 id="1、设置中文"><a href="#1、设置中文" class="headerlink" title="1、设置中文"></a>1、设置中文</h4><p>在拓展里搜索Chinese</p><p>然后安装重启</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8981636209087_.pic_hd.jpg" alt="VSCode设置中文"></p><h4 id="2、安装Remote-SSH"><a href="#2、安装Remote-SSH" class="headerlink" title="2、安装Remote SSH"></a>2、安装Remote SSH</h4><p>在拓展里搜索Remote SSH安装</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-223928.png" alt="安装 Remote SSH"></p><h4 id="4、添加树莓派"><a href="#4、添加树莓派" class="headerlink" title="4、添加树莓派"></a>4、添加树莓派</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224521.png" alt="添加树莓派链接"></p><p>然后输入ssh 用户名@ip -A</p><p>后期也可以更改，我这里是远程链接的</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224703.png" alt="更改SSH"></p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224736.png" alt="添加树莓派2"></p><p>Host:显示的名称</p><p>HOSTName:树莓派的IP</p><p>User:用户名</p><p>Port:端口号</p><h4 id="5、链接树莓派管理文件及打开终端"><a href="#5、链接树莓派管理文件及打开终端" class="headerlink" title="5、链接树莓派管理文件及打开终端"></a>5、链接树莓派管理文件及打开终端</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225350.png" alt="链接树莓派管理文件"></p><p>输入密码</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225422.png" alt="输入密码"></p><p>点击上面的终端</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225600.png" alt="链接树莓派打开终端"></p><p>接下来愉快的使用树莓派吧</p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225705.png" alt="愉快的使用树莓派把"></p><h2 id="二、初始账号密码"><a href="#二、初始账号密码" class="headerlink" title="二、初始账号密码"></a>二、初始账号密码</h2><p>初始账号密码：pi  raspberry</p><p>链接成功后输入passwd可修改初始密码</p><h2 id="三、安装中文支持"><a href="#三、安装中文支持" class="headerlink" title="三、安装中文支持"></a>三、安装中文支持</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ttf-wqy-zenhei #安装文泉驿字体</span><br><span class="line">sudo fc-cache #刷新字库缓存</span><br><span class="line">sudo dpkg-reconfigure locales #配置字体</span><br><span class="line">sudo raspi-config #设置</span><br><span class="line">sudo apt-get install scim-pinyin #安装中文拼音输入法</span><br><span class="line">设置显示中文。</span><br><span class="line">终端下执行命令：sudo raspi-config</span><br><span class="line">选择：4 Localisation Options  --&gt;  I1 Change Locale</span><br><span class="line">操作提示：按空格键在前面打勾或去掉勾（星号=勾），PageUp PageDown快速翻页，Tab键跳到OK按钮上</span><br><span class="line">去掉en_GB.UTF-8 UTF-8，</span><br><span class="line">勾上：“en_US.UTF-8 UTF-8”、“zh_CN.UTF-8 UTF-8”、“zh_CN.GBK GBK”</span><br><span class="line">下一屏幕默认语言选zh_CN.UTF-8。</span><br></pre></td></tr></table></figure><p>在众多选项中找到<strong>en_GB.UTF-8 UTF-8，</strong>系统默认是这个，前面有个‘*’，敲空格可以去掉这个星号，用pagedown翻页比较快，去掉之后从里面找到<strong>”en_US.UTF-8 UTF-8“，”zh_CN.UTF-8 UTF-8“，”zh_CN.GBK GBK”</strong>这三个选项， 用空格键在前面加上星号。</p><h2 id="四、替换软件源"><a href="#四、替换软件源" class="headerlink" title="四、替换软件源"></a>四、替换软件源</h2><p>软件源在线配置工具已上线，一键生成更新命令，再也不用手打指令啦</p><p><a href="https://tech.biko.pub/tool#/rpi-apt-sources">https://tech.biko.pub/tool#/rpi-apt-sources</a></p><p>（~# cat /etc/debian_version 查看版本号）</p><p>Debian10自动执行脚本：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://tech.biko.pub/resource/rpi-replace-apt-source-buster.sh | sudo bash</span><br></pre></td></tr></table></figure><blockquote><p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/">https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/</a>  #清华大学开源软件镜像站</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update 更新升级连接文件</span><br><span class="line">sudo apt-get dist-upgrade 更新并安装程序</span><br><span class="line">sudo apt-get clean 清空系统不使用的旧文件</span><br></pre></td></tr></table></figure><blockquote><p>中国科学技术大学</p><p>Raspbian <a href="http://mirrors.ustc.edu.cn/raspbian/raspbian/">http://mirrors.ustc.edu.cn/raspbian/raspbian/</a></p><p>阿里云</p><p>Raspbian <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.aliyun.com/raspbian/raspbian/</a></p><p>清华大学</p><p>Raspbian <a href="http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</a></p><p>华中科技大学</p><p>Raspbian <a href="http://mirrors.hustunique.com/raspbian/raspbian/">http://mirrors.hustunique.com/raspbian/raspbian/</a></p><p>Arch Linux ARM <a href="http://mirrors.hustunique.com/archlinuxarm/">http://mirrors.hustunique.com/archlinuxarm/</a></p><p>华南农业大学（华南用户）</p><p>Raspbian <a href="http://mirrors.scau.edu.cn/raspbian/">http://mirrors.scau.edu.cn/raspbian/</a></p><p>大连东软信息学院源（北方用户）</p><p>Raspbian <a href="http://mirrors.neusoft.edu.cn/raspbian/raspbian/">http://mirrors.neusoft.edu.cn/raspbian/raspbian/</a></p><p>重庆大学源（中西部用户）</p><p>Raspbian <a href="http://mirrors.cqu.edu.cn/Raspbian/raspbian/">http://mirrors.cqu.edu.cn/Raspbian/raspbian/</a></p><p>中山大学 已跳转至中国科学技术大学源</p><p>Raspbian <a href="http://mirror.sysu.edu.cn/raspbian/raspbian/">http://mirror.sysu.edu.cn/raspbian/raspbian/</a></p><p>新加坡国立大学</p><p>Raspbian <a href="http://mirror.nus.edu.sg/raspbian/raspbian">http://mirror.nus.edu.sg/raspbian/raspbian</a></p><p>牛津大学</p><p>Raspbian <a href="http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/">http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/</a></p><p>韩国KAIST大学</p><p>Raspbian <a href="http://ftp.kaist.ac.kr/raspbian/raspbian/">http://ftp.kaist.ac.kr/raspbian/raspbian/</a></p></blockquote><h3 id="PS-另一种换源方式："><a href="#PS-另一种换源方式：" class="headerlink" title="PS.另一种换源方式："></a>PS.另一种换源方式：</h3><h4 id="1、备份原始文件（可选步骤）"><a href="#1、备份原始文件（可选步骤）" class="headerlink" title="1、备份原始文件（可选步骤）"></a>1、<strong>备份原始文件（可选步骤）</strong></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line">sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak</span><br></pre></td></tr></table></figure><h4 id="2、编辑软件源配置"><a href="#2、编辑软件源配置" class="headerlink" title="2、编辑软件源配置"></a>2、<strong>编辑软件源配置</strong></h4><p>编辑 /etc/apt/sources.list 文件（软件源），参考如下命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure><p>删除原文件所有内容，</p><p><strong>buster</strong> 系统用以下内容取代：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br></pre></td></tr></table></figure><p>注：网址末尾的raspbian重复两次是必须的。因为Raspbian的仓库中除了APT软件源还包含其他代码。APT软件源不在仓库的根目录，而在raspbian/</p><p>子目录下。</p><p><strong>stretch</strong> 系统用以下内容取代：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure><p><strong>jessie</strong> 用以下内容取代：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br></pre></td></tr></table></figure><p><strong>wheezy</strong> 用以下内容取代：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br></pre></td></tr></table></figure><p>（<strong>buster、</strong>stretch、<strong>jessie、</strong>wheezy为Debian版本号）</p><p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p><p><strong>编辑系统源配置</strong></p><p>编辑 /etc/apt/sources.list.d/raspi.list 文件（系统更新源），参考如下命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure><p>同样修改首行网址，修改后文件如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui</span><br><span class="line"># Uncomment line below then &#x27;apt-get update&#x27; to enable &#x27;apt-get source&#x27;</span><br><span class="line">#deb-src http://archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure><p>jessie、wheezy 版本的系统按照之前修改软件源的的规则修改即可，这里不再赘述。</p><p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p><p><strong>更新</strong></p><p>配置好了可以尝试更新，用下面的命令分别更新软件源列表、软件版本和系统内核版本，完整的更新过程需要等挺久的。一般只用更新软件源列表即可。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#更新软件源列表</span><br><span class="line">sudo apt-get update</span><br><span class="line">#更新软件版本</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line">sudo apt-get dist-upgrade</span><br><span class="line">#更新系统内核</span><br><span class="line">sudo rpi-update</span><br></pre></td></tr></table></figure><p>如果需要，你可以执行以下命令将Raspbian public key加入你的 apt-get keyring :</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>折腾日记</category>
+          
+          <category> Raspberry Pi </category>
+          
       </categories>
-      <tags>
-        <tag>MacOS鼠标更换</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你是人间的四月天</title>
-    <url>/uncategorized/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
-    <content><![CDATA[<h1 id="你是人间的四月天"><a href="#你是人间的四月天" class="headerlink" title="你是人间的四月天"></a>你是人间的四月天</h1><blockquote>
-<p><em>—— 一句爱的赞颂</em></p>
-</blockquote>
-<p><strong>我说 你是人间的四月天；</strong></p>
-<p><strong>笑响点亮了四面风；</strong></p>
-<p><strong>轻灵在春的光艳中交舞着变。</strong></p>
-<p><strong>你是四月早天里的云烟，</strong></p>
-<p><strong>黄昏吹着风的软，星子在</strong></p>
-<p><strong>无意中闪，细雨点洒在花前。</strong></p>
-<p><strong>那轻，那娉婷，你是，</strong></p>
-<p><strong>鲜妍百花的冠冕你戴着，</strong></p>
-<p><strong>你是天真，庄严，</strong></p>
-<p><strong>你是夜夜的月圆。</strong></p>
-<p><strong>雪化后那片鹅黄，你像；</strong></p>
-<p><strong>新鲜初放芽的绿，你是；</strong></p>
-<p><strong>柔嫩喜悦，水光浮动着你梦期待中白莲。</strong></p>
-<p><strong>你是一树一树的花开，</strong></p>
-<p><strong>是燕在梁间呢喃，</strong></p>
-<p><strong>——你是爱，是暖，</strong></p>
-<p><strong>是希望，</strong></p>
-<p><strong>你是人间的四月天！</strong></p>
-<hr>
-<p><strong><code>2019.07.05 我的宝贝来到这个世界</code></strong></p>
-<img src="https://gitee.com/tosspi/img/raw/master/tags/riji/1.jpg" alt="HEMU" style="zoom: 50%;" />
-
-]]></content>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>写给我亲爱的女儿</title>
-    <url>/uncategorized/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
-    <content><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p>
-<p>一岁8个月21天</p>
-<p>是成功断奶后的第二天</p>
-<p>从此我们之间结束了36.7的母乳关系</p>
-<p>相对于一般小朋友来说 这已经不算早了 但是我仍然心存万般不舍</p>
-<p>你出乎意料的懂事 因为你对母乳的依恋都以为你会大闹 但是你却出奇的懂事</p>
-<p>断奶的第一天你发烧了 不知什么原因</p>
-<p>我很心疼 自责是不是因为断奶</p>
-<p>但是你很欢腾 只有在很想的时候问我妈妈 mei’mei 我说你是大宝宝不能吃了 你就不再说了</p>
-<p>断奶的第二个夜晚你就开始睡整夜觉 半夜只是自己醒了叫了声妈妈翻身继续睡了</p>
-<p>第一次没有一夜醒五六次来给你喂奶 我还有些不适</p>
-<p>这个点以前你都会起来夜奶今天没有 而我却失眠了</p>
-<p>我的女儿👧🏻你简直是妈妈的天使</p>
-<p>虽然你还在发烧 母乳却意料之外的断的听话</p>
-<p>我的女儿 妈妈只愿你健康快乐</p>
-<p>永远爱你❤️</p>
-<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/eb92b586ly1gowuogl2avj22c0340b1y.jpg" style="zoom:10%;" />
-
-<p>​                                                by<a href="https://weibo.com/3952260486/K7UVHoQw5">@牟云石石石</a></p>
-]]></content>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Raspberry Pi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>This is for my gril</title>
+      <link href="/uncategorized/This%20is%20for%20my%20gril/"/>
+      <url>/uncategorized/This%20is%20for%20my%20gril/</url>
+      
+        <content type="html"><![CDATA[<p>2岁1个月21天</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;004AFf1D1AU7I4&quot; &quot;tencent&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><p>服了我闺女的感性的一天</p><p>今晚睡前她妈妈和她在翻手机里她小时候的照片  </p><p>一边看一边在给她讲小时候的故事</p><p>她俩都看的特别认真</p><p>因为时间原因 妈妈说先看这些吧 剩下的明天再看</p><p>于是她妈妈就总结了一下说：</p><p>你小时候爸爸妈妈很爱你 </p><p>大了爸爸妈妈更爱你 </p><p>希望你健康长大 不要生病 </p><p>等妈妈总结完成看我闺女 </p><p>我闺女满眼泪水 </p><p>我问她：你怎么了？  </p><p>我闺女就哇哇大哭了</p><p>我…………最后哭睡了 …………</p><p>最后我想说：时间可真快啊  我的女孩已经这么大了</p><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8761635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8711635579786_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8751635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /></p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8881635580066_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8861635580050_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8851635580047_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8841635580046_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8831635580044_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8821635580042_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8811635580041_.pic.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8781635580038_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8771635579793_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8741635579791_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8731635579789_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8721635579788_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8701635579785_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8691635579782_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你是人间的四月天</title>
+      <link href="/uncategorized/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/"/>
+      <url>/uncategorized/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="你是人间的四月天"><a href="#你是人间的四月天" class="headerlink" title="你是人间的四月天"></a>你是人间的四月天</h1><blockquote><p><em>—— 一句爱的赞颂</em></p></blockquote><p><strong>我说 你是人间的四月天；</strong></p><p><strong>笑响点亮了四面风；</strong></p><p><strong>轻灵在春的光艳中交舞着变。</strong></p><p><strong>你是四月早天里的云烟，</strong></p><p><strong>黄昏吹着风的软，星子在</strong></p><p><strong>无意中闪，细雨点洒在花前。</strong></p><p><strong>那轻，那娉婷，你是，</strong></p><p><strong>鲜妍百花的冠冕你戴着，</strong></p><p><strong>你是天真，庄严，</strong></p><p><strong>你是夜夜的月圆。</strong></p><p><strong>雪化后那片鹅黄，你像；</strong></p><p><strong>新鲜初放芽的绿，你是；</strong></p><p><strong>柔嫩喜悦，水光浮动着你梦期待中白莲。</strong></p><p><strong>你是一树一树的花开，</strong></p><p><strong>是燕在梁间呢喃，</strong></p><p><strong>——你是爱，是暖，</strong></p><p><strong>是希望，</strong></p><p><strong>你是人间的四月天！</strong></p><hr><p><strong><code>2019.07.05 我的宝贝来到这个世界</code></strong></p><img src="https://gitee.com/tosspi/img/raw/master/tags/riji/1.jpg" alt="HEMU" style="zoom: 50%;" />]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一个点都不能少</title>
+      <link href="/uncategorized/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/"/>
+      <url>/uncategorized/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
+      
+        <content type="html"><![CDATA[<h1 id="中国地图"><a href="#中国地图" class="headerlink" title="中国地图"></a>中国地图</h1><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/4o28b0625501ad13015501ad2bfc0135.jpg" alt="中国地图"></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong><a href="http://www.mnr.gov.cn/dt/ywbb/201908/t20190802_2451218.html">快速识别问题地图</a></strong></p><p><img src="https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200322200501.png"></p><table><thead><tr><th>来源</th><th>下载地址</th><th>格式</th><th>类型数量</th><th>类型</th><th>权限</th></tr></thead><tbody><tr><td>自然资源部地图技术审查中心</td><td><a href="http://bzdt.ch.mnr.gov.cn/index.html">标准地图服务</a></td><td>JPG、EPS</td><td>115</td><td>色块/有无邻国/线划</td><td>免费浏览、下载，直接使用标准地图需标注审图号。对地图内容编辑（包括放大、缩小和裁切）改动的，公开使用前需要送自然资源主管部门审核。</td></tr><tr><td>国家基础地理信息中心</td><td><a href="https://www.tianditu.gov.cn/">天地图</a></td><td>API(OGC WMTS标准)</td><td>9</td><td>矢量底图/影像底图/地形晕渲/全球境界/注记</td><td>对所有用户开放,需申请 Key</td></tr><tr><td>中国科学院地理科学与资源研究所</td><td><a href="http://www.resdc.cn/data.aspx?DATAID=200">资源环境数据云平台</a></td><td>shape文件矢量数据</td><td>1</td><td>2015年中国省级行政边界数据</td><td>需注册会员登录</td></tr><tr><td>全国地质资料馆</td><td><a href="http://ngac.org.cn/Map/List">地质图库</a></td><td>WMTS</td><td>5721</td><td>地质相关</td><td>免费公开</td></tr></tbody></table><p>​                                                                                                                                            By<a href="https://github.com/blackboxo">blackboxo</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 一点都不能少 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写给我亲爱的女儿</title>
+      <link href="/uncategorized/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/"/>
+      <url>/uncategorized/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p><p>一岁8个月21天</p><p>是成功断奶后的第二天</p><p>从此我们之间结束了36.7的母乳关系</p><p>相对于一般小朋友来说 这已经不算早了 但是我仍然心存万般不舍</p><p>你出乎意料的懂事 因为你对母乳的依恋都以为你会大闹 但是你却出奇的懂事</p><p>断奶的第一天你发烧了 不知什么原因</p><p>我很心疼 自责是不是因为断奶</p><p>但是你很欢腾 只有在很想的时候问我妈妈 mei’mei 我说你是大宝宝不能吃了 你就不再说了</p><p>断奶的第二个夜晚你就开始睡整夜觉 半夜只是自己醒了叫了声妈妈翻身继续睡了</p><p>第一次没有一夜醒五六次来给你喂奶 我还有些不适</p><p>这个点以前你都会起来夜奶今天没有 而我却失眠了</p><p>我的女儿👧🏻你简直是妈妈的天使</p><p>虽然你还在发烧 母乳却意料之外的断的听话</p><p>我的女儿 妈妈只愿你健康快乐</p><p>永远爱你❤️</p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/eb92b586ly1gowuogl2avj22c0340b1y.jpg" style="zoom:10%;" /><p>​                                                by<a href="https://weibo.com/3952260486/K7UVHoQw5">@牟云石石石</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
