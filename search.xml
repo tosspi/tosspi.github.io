@@ -316,13 +316,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/uncategorized/hello-world/</url>
+    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>RaspberryPi初次启动</title>
     <url>/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p>
 <p>生命不息，折腾不止</p>
 <hr>
 <h2 id="一、链接树莓派软件"><a href="#一、链接树莓派软件" class="headerlink" title="一、链接树莓派软件"></a>一、链接树莓派软件</h2><p>putty、Xshell、VNV Viewer远程桌面、VSCode</p>
-<p>Mac OS终端：ssh <a href="mailto:&#112;&#x69;&#64;&#x31;&#x39;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#120;&#x2e;&#x78;">&#112;&#x69;&#64;&#x31;&#x39;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#120;&#x2e;&#x78;</a></p>
+<p>Mac OS终端：ssh <a href="mailto:&#112;&#x69;&#x40;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#46;&#120;&#46;&#x78;">&#112;&#x69;&#x40;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#46;&#120;&#46;&#x78;</a></p>
 <p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/60A5142A-2E66-442A-A78A-A4A7479FD2B9.png" alt="LED亮灯状态"></p>
 <h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>这里说一下VSCode，真的太好用了</p>
 <p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-171229.png" alt="VSCode"></p>
@@ -469,12 +475,6 @@
       <tags>
         <tag>日记</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/hello-world/</url>
-    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
-]]></content>
   </entry>
   <entry>
     <title>一个点都不能少</title>
