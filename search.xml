@@ -1,167 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>RaspberryPi初次启动</title>
-    <url>/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p>
-<p>生命不息，折腾不止</p>
-<hr>
-<h2 id="一、链接树莓派软件"><a href="#一、链接树莓派软件" class="headerlink" title="一、链接树莓派软件"></a>一、链接树莓派软件</h2><p>putty、Xshell、VNV Viewer远程桌面、VSCode</p>
-<p>Mac OS终端：ssh <a href="mailto:&#112;&#105;&#x40;&#x31;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#120;&#46;&#120;">&#112;&#105;&#x40;&#x31;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#120;&#46;&#120;</a></p>
-<p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/60A5142A-2E66-442A-A78A-A4A7479FD2B9.png" alt="LED亮灯状态"></p>
-<h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>这里说一下VSCode，真的太好用了</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-171229.png" alt="VSCode"></p>
-<p>在线版<a href="https://vscode.dev/">VSCode</a></p>
-<p>我使用的是MAC版的，下载地址<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
-<h4 id="1、设置中文"><a href="#1、设置中文" class="headerlink" title="1、设置中文"></a>1、设置中文</h4><p>在拓展里搜索Chinese</p>
-<p>然后安装重启</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8981636209087_.pic_hd.jpg" alt="VSCode设置中文"></p>
-<h4 id="2、安装Remote-SSH"><a href="#2、安装Remote-SSH" class="headerlink" title="2、安装Remote SSH"></a>2、安装Remote SSH</h4><p>在拓展里搜索Remote SSH安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-223928.png" alt="安装 Remote SSH"></p>
-<h4 id="4、添加树莓派"><a href="#4、添加树莓派" class="headerlink" title="4、添加树莓派"></a>4、添加树莓派</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224521.png" alt="添加树莓派链接"></p>
-<p>然后输入ssh 用户名@ip -A</p>
-<p>后期也可以更改，我这里是远程链接的</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224703.png" alt="更改SSH"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224736.png" alt="添加树莓派2"></p>
-<p>Host:显示的名称</p>
-<p>HOSTName:树莓派的IP</p>
-<p>User:用户名</p>
-<p>Port:端口号</p>
-<h4 id="5、链接树莓派管理文件及打开终端"><a href="#5、链接树莓派管理文件及打开终端" class="headerlink" title="5、链接树莓派管理文件及打开终端"></a>5、链接树莓派管理文件及打开终端</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225350.png" alt="链接树莓派管理文件"></p>
-<p>输入密码</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225422.png" alt="输入密码"></p>
-<p>点击上面的终端</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225600.png" alt="链接树莓派打开终端"></p>
-<p>接下来愉快的使用树莓派吧</p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225705.png" alt="愉快的使用树莓派把"></p>
-<h2 id="二、初始账号密码"><a href="#二、初始账号密码" class="headerlink" title="二、初始账号密码"></a>二、初始账号密码</h2><p>初始账号密码：pi  raspberry</p>
-<p>链接成功后输入passwd可修改初始密码</p>
-<h2 id="三、安装中文支持"><a href="#三、安装中文支持" class="headerlink" title="三、安装中文支持"></a>三、安装中文支持</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ttf-wqy-zenhei #安装文泉驿字体</span><br><span class="line">sudo fc-cache #刷新字库缓存</span><br><span class="line">sudo dpkg-reconfigure locales #配置字体</span><br><span class="line">sudo raspi-config #设置</span><br><span class="line">sudo apt-get install scim-pinyin #安装中文拼音输入法</span><br><span class="line">设置显示中文。</span><br><span class="line">终端下执行命令：sudo raspi-config</span><br><span class="line">选择：4 Localisation Options  --&gt;  I1 Change Locale</span><br><span class="line">操作提示：按空格键在前面打勾或去掉勾（星号=勾），PageUp PageDown快速翻页，Tab键跳到OK按钮上</span><br><span class="line">去掉en_GB.UTF-8 UTF-8，</span><br><span class="line">勾上：“en_US.UTF-8 UTF-8”、“zh_CN.UTF-8 UTF-8”、“zh_CN.GBK GBK”</span><br><span class="line">下一屏幕默认语言选zh_CN.UTF-8。</span><br></pre></td></tr></table></figure>
-
-<p>在众多选项中找到<strong>en_GB.UTF-8 UTF-8，</strong>系统默认是这个，前面有个‘*’，敲空格可以去掉这个星号，用pagedown翻页比较快，去掉之后从里面找到<strong>”en_US.UTF-8 UTF-8“，”zh_CN.UTF-8 UTF-8“，”zh_CN.GBK GBK”</strong>这三个选项， 用空格键在前面加上星号。</p>
-<h2 id="四、替换软件源"><a href="#四、替换软件源" class="headerlink" title="四、替换软件源"></a>四、替换软件源</h2><p>软件源在线配置工具已上线，一键生成更新命令，再也不用手打指令啦</p>
-<p><a href="https://tech.biko.pub/tool#/rpi-apt-sources">https://tech.biko.pub/tool#/rpi-apt-sources</a></p>
-<p>（~# cat /etc/debian_version 查看版本号）</p>
-<p>Debian10自动执行脚本：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -qO- https://tech.biko.pub/resource/rpi-replace-apt-source-buster.sh | sudo bash</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/">https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/</a>  #清华大学开源软件镜像站</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update 更新升级连接文件</span><br><span class="line">sudo apt-get dist-upgrade 更新并安装程序</span><br><span class="line">sudo apt-get clean 清空系统不使用的旧文件</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>中国科学技术大学</p>
-<p>Raspbian <a href="http://mirrors.ustc.edu.cn/raspbian/raspbian/">http://mirrors.ustc.edu.cn/raspbian/raspbian/</a></p>
-<p>阿里云</p>
-<p>Raspbian <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.aliyun.com/raspbian/raspbian/</a></p>
-<p>清华大学</p>
-<p>Raspbian <a href="http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</a></p>
-<p>华中科技大学</p>
-<p>Raspbian <a href="http://mirrors.hustunique.com/raspbian/raspbian/">http://mirrors.hustunique.com/raspbian/raspbian/</a></p>
-<p>Arch Linux ARM <a href="http://mirrors.hustunique.com/archlinuxarm/">http://mirrors.hustunique.com/archlinuxarm/</a></p>
-<p>华南农业大学（华南用户）</p>
-<p>Raspbian <a href="http://mirrors.scau.edu.cn/raspbian/">http://mirrors.scau.edu.cn/raspbian/</a></p>
-<p>大连东软信息学院源（北方用户）</p>
-<p>Raspbian <a href="http://mirrors.neusoft.edu.cn/raspbian/raspbian/">http://mirrors.neusoft.edu.cn/raspbian/raspbian/</a></p>
-<p>重庆大学源（中西部用户）</p>
-<p>Raspbian <a href="http://mirrors.cqu.edu.cn/Raspbian/raspbian/">http://mirrors.cqu.edu.cn/Raspbian/raspbian/</a></p>
-<p>中山大学 已跳转至中国科学技术大学源</p>
-<p>Raspbian <a href="http://mirror.sysu.edu.cn/raspbian/raspbian/">http://mirror.sysu.edu.cn/raspbian/raspbian/</a></p>
-<p>新加坡国立大学</p>
-<p>Raspbian <a href="http://mirror.nus.edu.sg/raspbian/raspbian">http://mirror.nus.edu.sg/raspbian/raspbian</a></p>
-<p>牛津大学</p>
-<p>Raspbian <a href="http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/">http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/</a></p>
-<p>韩国KAIST大学</p>
-<p>Raspbian <a href="http://ftp.kaist.ac.kr/raspbian/raspbian/">http://ftp.kaist.ac.kr/raspbian/raspbian/</a></p>
-</blockquote>
-<h3 id="PS-另一种换源方式："><a href="#PS-另一种换源方式：" class="headerlink" title="PS.另一种换源方式："></a>PS.另一种换源方式：</h3><h4 id="1、备份原始文件（可选步骤）"><a href="#1、备份原始文件（可选步骤）" class="headerlink" title="1、备份原始文件（可选步骤）"></a>1、<strong>备份原始文件（可选步骤）</strong></h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line">sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak</span><br></pre></td></tr></table></figure>
-
-<h4 id="2、编辑软件源配置"><a href="#2、编辑软件源配置" class="headerlink" title="2、编辑软件源配置"></a>2、<strong>编辑软件源配置</strong></h4><p>编辑 /etc/apt/sources.list 文件（软件源），参考如下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
-
-<p>删除原文件所有内容，</p>
-<p><strong>buster</strong> 系统用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br></pre></td></tr></table></figure>
-
-<p>注：网址末尾的raspbian重复两次是必须的。因为Raspbian的仓库中除了APT软件源还包含其他代码。APT软件源不在仓库的根目录，而在raspbian/</p>
-<p>子目录下。</p>
-<p><strong>stretch</strong> 系统用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<p><strong>jessie</strong> 用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<p><strong>wheezy</strong> 用以下内容取代：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<p>（<strong>buster、</strong>stretch、<strong>jessie、</strong>wheezy为Debian版本号）</p>
-<p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p>
-<p><strong>编辑系统源配置</strong></p>
-<p>编辑 /etc/apt/sources.list.d/raspi.list 文件（系统更新源），参考如下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>同样修改首行网址，修改后文件如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui</span><br><span class="line"># Uncomment line below then &#x27;apt-get update&#x27; to enable &#x27;apt-get source&#x27;</span><br><span class="line">#deb-src http://archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<p>jessie、wheezy 版本的系统按照之前修改软件源的的规则修改即可，这里不再赘述。</p>
-<p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p>
-<p><strong>更新</strong></p>
-<p>配置好了可以尝试更新，用下面的命令分别更新软件源列表、软件版本和系统内核版本，完整的更新过程需要等挺久的。一般只用更新软件源列表即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#更新软件源列表</span><br><span class="line">sudo apt-get update</span><br><span class="line">#更新软件版本</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line">sudo apt-get dist-upgrade</span><br><span class="line">#更新系统内核</span><br><span class="line">sudo rpi-update</span><br></pre></td></tr></table></figure>
-
-<p>如果需要，你可以执行以下命令将Raspbian public key加入你的 apt-get keyring :</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Raspberry Pi</category>
-      </categories>
-      <tags>
-        <tag>Raspberry Pi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>This is for my gril</title>
-    <url>/uncategorized/This%20is%20for%20my%20gril/</url>
-    <content><![CDATA[<p>2岁1个月21天</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;004AFf1D1AU7I4&quot; &quot;tencent&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" />
-
-<p>服了我闺女的感性的一天</p>
-<p>今晚睡前她妈妈和她在翻手机里她小时候的照片  </p>
-<p>一边看一边在给她讲小时候的故事</p>
-<p>她俩都看的特别认真</p>
-<p>因为时间原因 妈妈说先看这些吧 剩下的明天再看</p>
-<p>于是她妈妈就总结了一下说：</p>
-<p>你小时候爸爸妈妈很爱你 </p>
-<p>大了爸爸妈妈更爱你 </p>
-<p>希望你健康长大 不要生病 </p>
-<p>等妈妈总结完成看我闺女 </p>
-<p>我闺女满眼泪水 </p>
-<p>我问她：你怎么了？  </p>
-<p>我闺女就哇哇大哭了</p>
-<p>我…………最后哭睡了 …………</p>
-<p>最后我想说：时间可真快啊  我的女孩已经这么大了</p>
-<p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8761635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8711635579786_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8751635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8881635580066_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8861635580050_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8851635580047_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8841635580046_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8831635580044_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8821635580042_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8811635580041_.pic.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8781635580038_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8771635579793_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8741635579791_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8731635579789_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8721635579788_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8701635579785_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8691635579782_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
-]]></content>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/hello-world/</url>
-    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>mac更换鼠标样式</title>
     <url>/%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/Mac%E6%9B%B4%E6%8D%A2%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>mac更换鼠标样式依靠mousecape实现，</p>
@@ -477,6 +316,46 @@
       </tags>
   </entry>
   <entry>
+    <title>This is for my gril</title>
+    <url>/uncategorized/This%20is%20for%20my%20gril/</url>
+    <content><![CDATA[<p>2岁1个月21天</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;004AFf1D1AU7I4&quot; &quot;tencent&quot; &quot;playlist&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" />
+
+<p>服了我闺女的感性的一天</p>
+<p>今晚睡前她妈妈和她在翻手机里她小时候的照片  </p>
+<p>一边看一边在给她讲小时候的故事</p>
+<p>她俩都看的特别认真</p>
+<p>因为时间原因 妈妈说先看这些吧 剩下的明天再看</p>
+<p>于是她妈妈就总结了一下说：</p>
+<p>你小时候爸爸妈妈很爱你 </p>
+<p>大了爸爸妈妈更爱你 </p>
+<p>希望你健康长大 不要生病 </p>
+<p>等妈妈总结完成看我闺女 </p>
+<p>我闺女满眼泪水 </p>
+<p>我问她：你怎么了？  </p>
+<p>我闺女就哇哇大哭了</p>
+<p>我…………最后哭睡了 …………</p>
+<p>最后我想说：时间可真快啊  我的女孩已经这么大了</p>
+<p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8761635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8711635579786_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /><img src="https://gitee.com/TossPi/blogimg/raw/master/img/8751635579792_.pic.jpg" alt="alt Markdown" style="zoom:25%;" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8881635580066_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8871635580063_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8861635580050_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8851635580047_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8841635580046_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8831635580044_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8821635580042_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8811635580041_.pic.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8781635580038_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8771635579793_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8741635579791_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8731635579789_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8721635579788_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8701635579785_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8691635579782_.pic_hd.jpg" alt="alt Markdown" style="zoom:10%;" /></p>
+]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/uncategorized/hello-world/</url>
+    <content><![CDATA[<h1 id="关于本站的说明"><a href="#关于本站的说明" class="headerlink" title="关于本站的说明"></a>关于本站的说明</h1><p>大约是在2021年9月底吧，在树莓派上搭建了hexo，写了本站，同时部署了github和coding，但是后来树莓派挂载移动硬盘给搞的开不了机了，无奈重新刷写了系统，重新在MacBook上搭建了hexo，赶在2022年1月1日的末尾发布了本站<br>当时搭建的时候，使用的主题是Butterfly，折腾了好一阵，现在不想那么折腾了，简简单单也挺香<br>生命在于折腾，生命不息，折腾不止！！！！！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>一个点都不能少</title>
     <url>/uncategorized/%E4%B8%80%E7%82%B9%E9%83%BD%E4%B8%8D%E8%83%BD%E5%B0%91/</url>
     <content><![CDATA[<h1 id="中国地图"><a href="#中国地图" class="headerlink" title="中国地图"></a>中国地图</h1><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/4o28b0625501ad13015501ad2bfc0135.jpg" alt="中国地图"></p>
@@ -533,6 +412,33 @@
       </tags>
   </entry>
   <entry>
+    <title>写给我亲爱的女儿</title>
+    <url>/uncategorized/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
+    <content><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p>
+<p>一岁8个月21天</p>
+<p>是成功断奶后的第二天</p>
+<p>从此我们之间结束了36.7的母乳关系</p>
+<p>相对于一般小朋友来说 这已经不算早了 但是我仍然心存万般不舍</p>
+<p>你出乎意料的懂事 因为你对母乳的依恋都以为你会大闹 但是你却出奇的懂事</p>
+<p>断奶的第一天你发烧了 不知什么原因</p>
+<p>我很心疼 自责是不是因为断奶</p>
+<p>但是你很欢腾 只有在很想的时候问我妈妈 mei’mei 我说你是大宝宝不能吃了 你就不再说了</p>
+<p>断奶的第二个夜晚你就开始睡整夜觉 半夜只是自己醒了叫了声妈妈翻身继续睡了</p>
+<p>第一次没有一夜醒五六次来给你喂奶 我还有些不适</p>
+<p>这个点以前你都会起来夜奶今天没有 而我却失眠了</p>
+<p>我的女儿👧🏻你简直是妈妈的天使</p>
+<p>虽然你还在发烧 母乳却意料之外的断的听话</p>
+<p>我的女儿 妈妈只愿你健康快乐</p>
+<p>永远爱你❤️</p>
+<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/eb92b586ly1gowuogl2avj22c0340b1y.jpg" style="zoom:10%;" />
+
+<p>​                                                by<a href="https://weibo.com/3952260486/K7UVHoQw5">@牟云石石石</a></p>
+]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>你是人间的四月天</title>
     <url>/uncategorized/%E4%BD%A0%E6%98%AF%E4%BA%BA%E9%97%B4%E7%9A%84%E5%9B%9B%E6%9C%88%E5%A4%A9/</url>
     <content><![CDATA[<h1 id="你是人间的四月天"><a href="#你是人间的四月天" class="headerlink" title="你是人间的四月天"></a>你是人间的四月天</h1><blockquote>
@@ -566,30 +472,124 @@
       </tags>
   </entry>
   <entry>
-    <title>写给我亲爱的女儿</title>
-    <url>/uncategorized/%E5%86%99%E7%BB%99%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E5%A5%B3%E5%84%BF/</url>
-    <content><![CDATA[<h1 id="写给我亲爱的女儿👧🏻："><a href="#写给我亲爱的女儿👧🏻：" class="headerlink" title="写给我亲爱的女儿👧🏻："></a>写给我亲爱的女儿👧🏻：</h1><p>今天是你出生的第630天我的女儿</p>
-<p>一岁8个月21天</p>
-<p>是成功断奶后的第二天</p>
-<p>从此我们之间结束了36.7的母乳关系</p>
-<p>相对于一般小朋友来说 这已经不算早了 但是我仍然心存万般不舍</p>
-<p>你出乎意料的懂事 因为你对母乳的依恋都以为你会大闹 但是你却出奇的懂事</p>
-<p>断奶的第一天你发烧了 不知什么原因</p>
-<p>我很心疼 自责是不是因为断奶</p>
-<p>但是你很欢腾 只有在很想的时候问我妈妈 mei’mei 我说你是大宝宝不能吃了 你就不再说了</p>
-<p>断奶的第二个夜晚你就开始睡整夜觉 半夜只是自己醒了叫了声妈妈翻身继续睡了</p>
-<p>第一次没有一夜醒五六次来给你喂奶 我还有些不适</p>
-<p>这个点以前你都会起来夜奶今天没有 而我却失眠了</p>
-<p>我的女儿👧🏻你简直是妈妈的天使</p>
-<p>虽然你还在发烧 母乳却意料之外的断的听话</p>
-<p>我的女儿 妈妈只愿你健康快乐</p>
-<p>永远爱你❤️</p>
-<img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/eb92b586ly1gowuogl2avj22c0340b1y.jpg" style="zoom:10%;" />
+    <title>RaspberryPi初次启动</title>
+    <url>/Raspberry-Pi/Raspberry%20Pi%E5%88%9D%E6%AC%A1%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[<h1 id="Raspberry-Pi初次启动"><a href="#Raspberry-Pi初次启动" class="headerlink" title="Raspberry Pi初次启动"></a>Raspberry Pi初次启动</h1><p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/%E6%A0%91%E8%8E%93%E6%B4%BE.png" alt="Raspberry Pi"></p>
+<p>生命不息，折腾不止</p>
+<hr>
+<h2 id="一、链接树莓派软件"><a href="#一、链接树莓派软件" class="headerlink" title="一、链接树莓派软件"></a>一、链接树莓派软件</h2><p>putty、Xshell、VNV Viewer远程桌面、VSCode</p>
+<p>Mac OS终端：ssh <a href="mailto:&#x70;&#x69;&#64;&#x31;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#120;&#46;&#x78;">&#x70;&#x69;&#64;&#x31;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#120;&#46;&#x78;</a></p>
+<p><img src="https://gitee.com/TossPi/blogimg/raw/master/img/60A5142A-2E66-442A-A78A-A4A7479FD2B9.png" alt="LED亮灯状态"></p>
+<h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p>这里说一下VSCode，真的太好用了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-171229.png" alt="VSCode"></p>
+<p>在线版<a href="https://vscode.dev/">VSCode</a></p>
+<p>我使用的是MAC版的，下载地址<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+<h4 id="1、设置中文"><a href="#1、设置中文" class="headerlink" title="1、设置中文"></a>1、设置中文</h4><p>在拓展里搜索Chinese</p>
+<p>然后安装重启</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/8981636209087_.pic_hd.jpg" alt="VSCode设置中文"></p>
+<h4 id="2、安装Remote-SSH"><a href="#2、安装Remote-SSH" class="headerlink" title="2、安装Remote SSH"></a>2、安装Remote SSH</h4><p>在拓展里搜索Remote SSH安装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-223928.png" alt="安装 Remote SSH"></p>
+<h4 id="4、添加树莓派"><a href="#4、添加树莓派" class="headerlink" title="4、添加树莓派"></a>4、添加树莓派</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224521.png" alt="添加树莓派链接"></p>
+<p>然后输入ssh 用户名@ip -A</p>
+<p>后期也可以更改，我这里是远程链接的</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224703.png" alt="更改SSH"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-224736.png" alt="添加树莓派2"></p>
+<p>Host:显示的名称</p>
+<p>HOSTName:树莓派的IP</p>
+<p>User:用户名</p>
+<p>Port:端口号</p>
+<h4 id="5、链接树莓派管理文件及打开终端"><a href="#5、链接树莓派管理文件及打开终端" class="headerlink" title="5、链接树莓派管理文件及打开终端"></a>5、链接树莓派管理文件及打开终端</h4><p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225350.png" alt="链接树莓派管理文件"></p>
+<p>输入密码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225422.png" alt="输入密码"></p>
+<p>点击上面的终端</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225600.png" alt="链接树莓派打开终端"></p>
+<p>接下来愉快的使用树莓派吧</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tosspi/img@main//img/WX20211106-225705.png" alt="愉快的使用树莓派把"></p>
+<h2 id="二、初始账号密码"><a href="#二、初始账号密码" class="headerlink" title="二、初始账号密码"></a>二、初始账号密码</h2><p>初始账号密码：pi  raspberry</p>
+<p>链接成功后输入passwd可修改初始密码</p>
+<h2 id="三、安装中文支持"><a href="#三、安装中文支持" class="headerlink" title="三、安装中文支持"></a>三、安装中文支持</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ttf-wqy-zenhei #安装文泉驿字体</span><br><span class="line">sudo fc-cache #刷新字库缓存</span><br><span class="line">sudo dpkg-reconfigure locales #配置字体</span><br><span class="line">sudo raspi-config #设置</span><br><span class="line">sudo apt-get install scim-pinyin #安装中文拼音输入法</span><br><span class="line">设置显示中文。</span><br><span class="line">终端下执行命令：sudo raspi-config</span><br><span class="line">选择：4 Localisation Options  --&gt;  I1 Change Locale</span><br><span class="line">操作提示：按空格键在前面打勾或去掉勾（星号=勾），PageUp PageDown快速翻页，Tab键跳到OK按钮上</span><br><span class="line">去掉en_GB.UTF-8 UTF-8，</span><br><span class="line">勾上：“en_US.UTF-8 UTF-8”、“zh_CN.UTF-8 UTF-8”、“zh_CN.GBK GBK”</span><br><span class="line">下一屏幕默认语言选zh_CN.UTF-8。</span><br></pre></td></tr></table></figure>
 
-<p>​                                                by<a href="https://weibo.com/3952260486/K7UVHoQw5">@牟云石石石</a></p>
+<p>在众多选项中找到<strong>en_GB.UTF-8 UTF-8，</strong>系统默认是这个，前面有个‘*’，敲空格可以去掉这个星号，用pagedown翻页比较快，去掉之后从里面找到<strong>”en_US.UTF-8 UTF-8“，”zh_CN.UTF-8 UTF-8“，”zh_CN.GBK GBK”</strong>这三个选项， 用空格键在前面加上星号。</p>
+<h2 id="四、替换软件源"><a href="#四、替换软件源" class="headerlink" title="四、替换软件源"></a>四、替换软件源</h2><p>软件源在线配置工具已上线，一键生成更新命令，再也不用手打指令啦</p>
+<p><a href="https://tech.biko.pub/tool#/rpi-apt-sources">https://tech.biko.pub/tool#/rpi-apt-sources</a></p>
+<p>（~# cat /etc/debian_version 查看版本号）</p>
+<p>Debian10自动执行脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -qO- https://tech.biko.pub/resource/rpi-replace-apt-source-buster.sh | sudo bash</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/">https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/</a>  #清华大学开源软件镜像站</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update 更新升级连接文件</span><br><span class="line">sudo apt-get dist-upgrade 更新并安装程序</span><br><span class="line">sudo apt-get clean 清空系统不使用的旧文件</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>中国科学技术大学</p>
+<p>Raspbian <a href="http://mirrors.ustc.edu.cn/raspbian/raspbian/">http://mirrors.ustc.edu.cn/raspbian/raspbian/</a></p>
+<p>阿里云</p>
+<p>Raspbian <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.aliyun.com/raspbian/raspbian/</a></p>
+<p>清华大学</p>
+<p>Raspbian <a href="http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/">http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/</a></p>
+<p>华中科技大学</p>
+<p>Raspbian <a href="http://mirrors.hustunique.com/raspbian/raspbian/">http://mirrors.hustunique.com/raspbian/raspbian/</a></p>
+<p>Arch Linux ARM <a href="http://mirrors.hustunique.com/archlinuxarm/">http://mirrors.hustunique.com/archlinuxarm/</a></p>
+<p>华南农业大学（华南用户）</p>
+<p>Raspbian <a href="http://mirrors.scau.edu.cn/raspbian/">http://mirrors.scau.edu.cn/raspbian/</a></p>
+<p>大连东软信息学院源（北方用户）</p>
+<p>Raspbian <a href="http://mirrors.neusoft.edu.cn/raspbian/raspbian/">http://mirrors.neusoft.edu.cn/raspbian/raspbian/</a></p>
+<p>重庆大学源（中西部用户）</p>
+<p>Raspbian <a href="http://mirrors.cqu.edu.cn/Raspbian/raspbian/">http://mirrors.cqu.edu.cn/Raspbian/raspbian/</a></p>
+<p>中山大学 已跳转至中国科学技术大学源</p>
+<p>Raspbian <a href="http://mirror.sysu.edu.cn/raspbian/raspbian/">http://mirror.sysu.edu.cn/raspbian/raspbian/</a></p>
+<p>新加坡国立大学</p>
+<p>Raspbian <a href="http://mirror.nus.edu.sg/raspbian/raspbian">http://mirror.nus.edu.sg/raspbian/raspbian</a></p>
+<p>牛津大学</p>
+<p>Raspbian <a href="http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/">http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/</a></p>
+<p>韩国KAIST大学</p>
+<p>Raspbian <a href="http://ftp.kaist.ac.kr/raspbian/raspbian/">http://ftp.kaist.ac.kr/raspbian/raspbian/</a></p>
+</blockquote>
+<h3 id="PS-另一种换源方式："><a href="#PS-另一种换源方式：" class="headerlink" title="PS.另一种换源方式："></a>PS.另一种换源方式：</h3><h4 id="1、备份原始文件（可选步骤）"><a href="#1、备份原始文件（可选步骤）" class="headerlink" title="1、备份原始文件（可选步骤）"></a>1、<strong>备份原始文件（可选步骤）</strong></h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line">sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、编辑软件源配置"><a href="#2、编辑软件源配置" class="headerlink" title="2、编辑软件源配置"></a>2、<strong>编辑软件源配置</strong></h4><p>编辑 /etc/apt/sources.list 文件（软件源），参考如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+
+<p>删除原文件所有内容，</p>
+<p><strong>buster</strong> 系统用以下内容取代：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib</span><br></pre></td></tr></table></figure>
+
+<p>注：网址末尾的raspbian重复两次是必须的。因为Raspbian的仓库中除了APT软件源还包含其他代码。APT软件源不在仓库的根目录，而在raspbian/</p>
+<p>子目录下。</p>
+<p><strong>stretch</strong> 系统用以下内容取代：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<p><strong>jessie</strong> 用以下内容取代：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<p><strong>wheezy</strong> 用以下内容取代：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br><span class="line">deb-src http://mirrors.sysu.edu.cn/raspbian/raspbian/ wheezy main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<p>（<strong>buster、</strong>stretch、<strong>jessie、</strong>wheezy为Debian版本号）</p>
+<p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p>
+<p><strong>编辑系统源配置</strong></p>
+<p>编辑 /etc/apt/sources.list.d/raspi.list 文件（系统更新源），参考如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
+
+<p>同样修改首行网址，修改后文件如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui</span><br><span class="line"># Uncomment line below then &#x27;apt-get update&#x27; to enable &#x27;apt-get source&#x27;</span><br><span class="line">#deb-src http://archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
+
+<p>jessie、wheezy 版本的系统按照之前修改软件源的的规则修改即可，这里不再赘述。</p>
+<p>Ctrl+o 保存，之后回车确认，然后 Ctrl+x 退出。</p>
+<p><strong>更新</strong></p>
+<p>配置好了可以尝试更新，用下面的命令分别更新软件源列表、软件版本和系统内核版本，完整的更新过程需要等挺久的。一般只用更新软件源列表即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#更新软件源列表</span><br><span class="line">sudo apt-get update</span><br><span class="line">#更新软件版本</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line">sudo apt-get dist-upgrade</span><br><span class="line">#更新系统内核</span><br><span class="line">sudo rpi-update</span><br></pre></td></tr></table></figure>
+
+<p>如果需要，你可以执行以下命令将Raspbian public key加入你的 apt-get keyring :</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -</span><br></pre></td></tr></table></figure>
+
 ]]></content>
+      <categories>
+        <category>Raspberry Pi</category>
+      </categories>
       <tags>
-        <tag>日记</tag>
+        <tag>Raspberry Pi</tag>
       </tags>
   </entry>
 </search>
